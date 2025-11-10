@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-10T18:28:25 ICT" name="Surefire suite" finished-at="2025-11-10T18:28:29 ICT" duration-ms="3680">
+  <suite started-at="2025-11-10T18:35:58 ICT" name="Surefire suite" finished-at="2025-11-10T18:36:00 ICT" duration-ms="1709">
     <groups>
     </groups>
-    <test started-at="2025-11-10T18:28:25 ICT" name="Surefire test" finished-at="2025-11-10T18:28:29 ICT" duration-ms="3680">
+    <test started-at="2025-11-10T18:35:58 ICT" name="Surefire test" finished-at="2025-11-10T18:36:00 ICT" duration-ms="1709">
       <class name="com.mycompany.nhom08.Nhom08NGTest">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@2ea227af]" started-at="2025-11-10T18:28:08 ICT" name="setupSuite" finished-at="2025-11-10T18:28:25 ICT" duration-ms="17253" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@2ea227af]" started-at="2025-11-10T18:35:41 ICT" name="setupSuite" finished-at="2025-11-10T18:35:58 ICT" duration-ms="17391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@2ea227af]" started-at="2025-11-10T18:28:25 ICT" name="setUpMethod" finished-at="2025-11-10T18:28:26 ICT" duration-ms="1515" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@2ea227af]" started-at="2025-11-10T18:35:58 ICT" name="setUpMethod" finished-at="2025-11-10T18:36:00 ICT" duration-ms="1506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="test06_SortProductsByName()[pri:6, instance:com.mycompany.nhom08.Nhom08NGTest@2ea227af]" started-at="2025-11-10T18:28:26 ICT" name="test06_SortProductsByName" finished-at="2025-11-10T18:28:29 ICT" duration-ms="2136" status="FAIL">
+        <test-method signature="test07_SortProductsByPrice()[pri:7, instance:com.mycompany.nhom08.Nhom08NGTest@2ea227af]" started-at="2025-11-10T18:36:00 ICT" name="test07_SortProductsByPrice" finished-at="2025-11-10T18:36:00 ICT" duration-ms="143" status="FAIL">
           <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
               <![CDATA[stale element reference: stale element not found in the current frame
@@ -24,10 +24,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17acc5a6ace526adc45ee4dd6995da15, isElementEnabled {id=f.2CA61584C5B031EBA40809B22E4BF94A.d.3CB6EB4BE773B51DEB0690AD313F98A8.e.14}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61327}, goog:processID: 7452, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61327/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (17acc5a6ace526adc45ee4dd6995da15)] -> class name: product_sort_container]
-Session ID: 17acc5a6ace526adc45ee4dd6995da15]]>
+Command: [592ecde6916c47529243bb036dda3d2a, isElementEnabled {id=f.8683AA188EFD6CE282DB2AE05561C3EB.d.249A56499F061B74CE514411E5C08A3E.e.15}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62667}, goog:processID: 26672, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62667/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (592ecde6916c47529243bb036dda3d2a)] -> class name: product_sort_container]
+Session ID: 592ecde6916c47529243bb036dda3d2a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
@@ -36,10 +36,10 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17acc5a6ace526adc45ee4dd6995da15, isElementEnabled {id=f.2CA61584C5B031EBA40809B22E4BF94A.d.3CB6EB4BE773B51DEB0690AD313F98A8.e.14}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61327}, goog:processID: 7452, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61327/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (17acc5a6ace526adc45ee4dd6995da15)] -> class name: product_sort_container]
-Session ID: 17acc5a6ace526adc45ee4dd6995da15
+Command: [592ecde6916c47529243bb036dda3d2a, isElementEnabled {id=f.8683AA188EFD6CE282DB2AE05561C3EB.d.249A56499F061B74CE514411E5C08A3E.e.15}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62667}, goog:processID: 26672, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62667/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (592ecde6916c47529243bb036dda3d2a)] -> class name: product_sort_container]
+Session ID: 592ecde6916c47529243bb036dda3d2a
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -56,7 +56,7 @@ at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224
 at org.openqa.selenium.remote.RemoteWebElement.isEnabled(RemoteWebElement.java:182)
 at org.openqa.selenium.support.ui.Select.assertSelectIsEnabled(Select.java:326)
 at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:193)
-at com.mycompany.nhom08.Nhom08NGTest.test06_SortProductsByName(Nhom08NGTest.java:324)
+at com.mycompany.nhom08.Nhom08NGTest.test07_SortProductsByPrice(Nhom08NGTest.java:373)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,19 +95,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test06_SortProductsByName -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@2ea227af]" started-at="2025-11-10T18:28:29 ICT" name="tearDownMethod" finished-at="2025-11-10T18:28:29 ICT" duration-ms="9" status="PASS">
+        </test-method> <!-- test07_SortProductsByPrice -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@2ea227af]" started-at="2025-11-10T18:36:00 ICT" name="tearDownMethod" finished-at="2025-11-10T18:36:00 ICT" duration-ms="21" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test06_SortProductsByName status=FAILURE method=Nhom08NGTest.test06_SortProductsByName()[pri:6, instance:com.mycompany.nhom08.Nhom08NGTest@2ea227af] output={null}]]]>
+                <![CDATA[[TestResult name=test07_SortProductsByPrice status=FAILURE method=Nhom08NGTest.test07_SortProductsByPrice()[pri:7, instance:com.mycompany.nhom08.Nhom08NGTest@2ea227af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="finish()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@2ea227af]" started-at="2025-11-10T18:28:29 ICT" name="finish" finished-at="2025-11-10T18:28:32 ICT" duration-ms="3236" status="PASS">
+        <test-method is-config="true" signature="finish()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@2ea227af]" started-at="2025-11-10T18:36:00 ICT" name="finish" finished-at="2025-11-10T18:36:03 ICT" duration-ms="3240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finish -->

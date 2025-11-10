@@ -1,2 +1,2 @@
 Test Case,Status,Time,Duration (ms)
-test06_SortProductsByName,FAIL,10/11/2025 18:28:29,3658
+test07_SortProductsByPrice,FAIL,10/11/2025 18:36:00,1670

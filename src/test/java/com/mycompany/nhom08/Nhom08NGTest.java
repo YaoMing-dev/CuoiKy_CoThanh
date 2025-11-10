@@ -300,29 +300,44 @@ public class Nhom08NGTest {
         System.out.println("[OK] Test 5 hoan thanh");
     }
 
-   @Test(priority = 6)
+@Test(priority = 6)
     public void test06_SortProductsByName() throws InterruptedException {
         System.out.println("\n[TEST 6] Dang test sap xep san pham theo ten...");
-        // DA LOGIN ROI, KHONG CAN LOGIN NUA
         
-        Select sortDropdown = new Select(driver.findElement(By.className("product_sort_container")));
+        // Dinh nghia locator cho 2 phan tu quan trong
+        By sortContainerLocator = By.className("product_sort_container");
+        By activeOptionLocator = By.className("active_option");
+        By firstProductNameLocator = By.xpath("(//div[@class='inventory_item_name'])[1]");
+
+        // Dam bao trang da tai xong (cho den khi ten SP dau tien hien thi)
+        wait.until(ExpectedConditions.visibilityOfElementLocated(firstProductNameLocator));
+        
+        Select sortDropdown = new Select(driver.findElement(sortContainerLocator));
+        
+        // --- BUOC 1: KIEM TRA A-Z ---
         sortDropdown.selectByValue("az");
-        Thread.sleep(1000);
         
-        List<WebElement> productNames = driver.findElements(By.className("inventory_item_name"));
-        String firstName = productNames.get(0).getText();
-        assertTrue(firstName.startsWith("Sauce Labs"));
+        // DOI CHO TEXT CUA DROPDOWN CAP NHAT THANH "Name (A to Z)"
+        wait.until(ExpectedConditions.textToBe(activeOptionLocator, "Name (A to Z)"));
         
+        // Bay gio moi kiem tra san pham
+        String firstName = driver.findElement(firstProductNameLocator).getText();
+        assertEquals(firstName, "Sauce Labs Backpack");
+        
+        
+        // --- BUOC 2: KIEM TRA Z-A ---
         sortDropdown.selectByValue("za");
-        Thread.sleep(1000);
         
-        productNames = driver.findElements(By.className("inventory_item_name"));
-        String lastFirst = productNames.get(0).getText();
-        assertTrue(lastFirst.contains("T-Shirt") || lastFirst.contains("Test"));
+        // DOI CHO TEXT CUA DROPDOWN CAP NHAT THANH "Name (Z to A)"
+        wait.until(ExpectedConditions.textToBe(activeOptionLocator, "Name (Z to A)"));
+
+        // Bay gio moi kiem tra san pham
+        String newFirstName = driver.findElement(firstProductNameLocator).getText();
+        assertTrue(newFirstName.contains("T-Shirt") || newFirstName.contains("Test"));
         
-        // Reset ve sap xep mac dinh
+        // --- BUOC 3: Reset ---
         sortDropdown.selectByValue("az");
-        Thread.sleep(500);
+        wait.until(ExpectedConditions.textToBe(activeOptionLocator, "Name (A to Z)"));
         
         System.out.println("[OK] Test 6 hoan thanh");
     }
@@ -330,24 +345,33 @@ public class Nhom08NGTest {
     @Test(priority = 7)
     public void test07_SortProductsByPrice() throws InterruptedException {
         System.out.println("\n[TEST 7] Dang test sap xep san pham theo gia...");
-        // DA LOGIN ROI, KHONG CAN LOGIN NUA
         
-        Select sortDropdown = new Select(driver.findElement(By.className("product_sort_container")));
+        // Dinh nghia locator
+        By sortContainerLocator = By.className("product_sort_container");
+        By activeOptionLocator = By.className("active_option");
+        By firstProductPriceLocator = By.xpath("(//div[@class='inventory_item_price'])[1]");
+
+        // Dam bao trang da tai xong
+        wait.until(ExpectedConditions.visibilityOfElementLocated(firstProductPriceLocator));
+        
+        Select sortDropdown = new Select(driver.findElement(sortContainerLocator));
+        
+        // --- BUOC 1: KIEM TRA GIA THAP DEN CAO ---
         sortDropdown.selectByValue("lohi");
-        Thread.sleep(1000);
         
+        // DOI CHO TEXT CUA DROPDOWN CAP NHAT THANH "Price (low to high)"
+        wait.until(ExpectedConditions.textToBe(activeOptionLocator, "Price (low to high)"));
+        
+        // Bay gio moi kiem tra gia
         List<WebElement> prices = driver.findElements(By.className("inventory_item_price"));
-        String firstPrice = prices.get(0).getText().replace("$", "");
-        double price1 = Double.parseDouble(firstPrice);
-        
-        String secondPrice = prices.get(1).getText().replace("$", "");
-        double price2 = Double.parseDouble(secondPrice);
+        double price1 = Double.parseDouble(prices.get(0).getText().replace("$", ""));
+        double price2 = Double.parseDouble(prices.get(1).getText().replace("$", ""));
         
         assertTrue(price1 <= price2);
         
-        // Reset ve sap xep mac dinh
+        // --- BUOC 2: Reset ---
         sortDropdown.selectByValue("az");
-        Thread.sleep(500);
+        wait.until(ExpectedConditions.textToBe(activeOptionLocator, "Name (A to Z)"));
         
         System.out.println("[OK] Test 7 hoan thanh");
     }
