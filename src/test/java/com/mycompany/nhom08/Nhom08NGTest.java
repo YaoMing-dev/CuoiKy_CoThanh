@@ -45,15 +45,10 @@ public class Nhom08NGTest {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
         options.addArguments("--disable-blink-features=AutomationControlled");
-        options.addArguments("--disable-save-password-bubble");
-        options.addArguments("--disable-features=PasswordManager,PasswordCheck,PasswordLeakDetection");
+      
         options.addArguments("--incognito");
       
-        Map<String, Object> prefs = new HashMap<>();
-        prefs.put("credentials_enable_service", false);
-        prefs.put("profile.password_manager_enabled", false);
-        options.setExperimentalOption("prefs", prefs);
-        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+        
         
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

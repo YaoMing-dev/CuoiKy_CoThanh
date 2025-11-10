@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="20" passed="16" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-10T21:12:10 ICT" name="Surefire suite" finished-at="2025-11-10T21:12:43 ICT" duration-ms="33330">
+  <suite started-at="2025-11-10T21:13:53 ICT" name="Surefire suite" finished-at="2025-11-10T21:14:26 ICT" duration-ms="33489">
     <groups>
     </groups>
-    <test started-at="2025-11-10T21:12:10 ICT" name="Surefire test" finished-at="2025-11-10T21:12:43 ICT" duration-ms="33330">
+    <test started-at="2025-11-10T21:13:53 ICT" name="Surefire test" finished-at="2025-11-10T21:14:26 ICT" duration-ms="33489">
       <class name="com.mycompany.nhom08.Nhom08NGTest">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:06 ICT" name="setupSuite" finished-at="2025-11-10T21:12:10 ICT" duration-ms="3971" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:13:49 ICT" name="setupSuite" finished-at="2025-11-10T21:13:53 ICT" duration-ms="4109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:10 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:10 ICT" duration-ms="723" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:13:53 ICT" name="setUpMethod" finished-at="2025-11-10T21:13:54 ICT" duration-ms="660" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="test01_Login_Success()[pri:1, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:10 ICT" name="test01_Login_Success" finished-at="2025-11-10T21:12:12 ICT" duration-ms="2029" status="PASS">
+        <test-method signature="test01_Login_Success()[pri:1, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:13:54 ICT" name="test01_Login_Success" finished-at="2025-11-10T21:13:56 ICT" duration-ms="2050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test01_Login_Success -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:12 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:12 ICT" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:13:56 ICT" name="tearDownMethod" finished-at="2025-11-10T21:13:56 ICT" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,19 +30,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:12 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:13 ICT" duration-ms="615" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:13:56 ICT" name="setUpMethod" finished-at="2025-11-10T21:13:56 ICT" duration-ms="626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="test02_Login_LockedUser()[pri:2, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:13 ICT" name="test02_Login_LockedUser" finished-at="2025-11-10T21:12:16 ICT" duration-ms="3044" status="PASS">
+        <test-method signature="test02_Login_LockedUser()[pri:2, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:13:56 ICT" name="test02_Login_LockedUser" finished-at="2025-11-10T21:13:59 ICT" duration-ms="3189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test02_Login_LockedUser -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:16 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:17 ICT" duration-ms="600" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:16 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:16 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:13:59 ICT" name="tearDownMethod" finished-at="2025-11-10T21:13:59 ICT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,11 +49,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method signature="test03_Login_InvalidPassword()[pri:3, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:17 ICT" name="test03_Login_InvalidPassword" finished-at="2025-11-10T21:12:20 ICT" duration-ms="3023" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:13:59 ICT" name="setUpMethod" finished-at="2025-11-10T21:14:00 ICT" duration-ms="630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="test03_Login_InvalidPassword()[pri:3, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:00 ICT" name="test03_Login_InvalidPassword" finished-at="2025-11-10T21:14:03 ICT" duration-ms="3192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test03_Login_InvalidPassword -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:20 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:20 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:03 ICT" name="tearDownMethod" finished-at="2025-11-10T21:14:03 ICT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -68,15 +68,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:20 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:20 ICT" duration-ms="616" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:03 ICT" name="setUpMethod" finished-at="2025-11-10T21:14:04 ICT" duration-ms="616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="TC04()[pri:4, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:20 ICT" name="TC04" finished-at="2025-11-10T21:12:20 ICT" duration-ms="94" status="PASS">
+        <test-method signature="TC04()[pri:4, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:04 ICT" name="TC04" finished-at="2025-11-10T21:14:04 ICT" duration-ms="102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC04 -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:20 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:20 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:04 ICT" name="tearDownMethod" finished-at="2025-11-10T21:14:04 ICT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,15 +87,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:20 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:21 ICT" duration-ms="616" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:04 ICT" name="setUpMethod" finished-at="2025-11-10T21:14:05 ICT" duration-ms="614" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="TC05()[pri:5, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:21 ICT" name="TC05" finished-at="2025-11-10T21:12:22 ICT" duration-ms="1089" status="PASS">
+        <test-method signature="TC05()[pri:5, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:05 ICT" name="TC05" finished-at="2025-11-10T21:14:06 ICT" duration-ms="1095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC05 -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:22 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:22 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:06 ICT" name="tearDownMethod" finished-at="2025-11-10T21:14:06 ICT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,19 +106,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:22 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:23 ICT" duration-ms="1080" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:06 ICT" name="setUpMethod" finished-at="2025-11-10T21:14:07 ICT" duration-ms="1087" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="TC06()[pri:6, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:23 ICT" name="TC06" finished-at="2025-11-10T21:12:25 ICT" duration-ms="2122" status="PASS">
+        <test-method signature="TC06()[pri:6, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:07 ICT" name="TC06" finished-at="2025-11-10T21:14:09 ICT" duration-ms="2155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC06 -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:25 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:26 ICT" duration-ms="631" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:25 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:25 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:09 ICT" name="tearDownMethod" finished-at="2025-11-10T21:14:09 ICT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -129,11 +125,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method signature="TC07()[pri:7, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:26 ICT" name="TC07" finished-at="2025-11-10T21:12:27 ICT" duration-ms="1100" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:09 ICT" name="setUpMethod" finished-at="2025-11-10T21:14:10 ICT" duration-ms="613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="TC07()[pri:7, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:10 ICT" name="TC07" finished-at="2025-11-10T21:14:11 ICT" duration-ms="1064" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC07 -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:27 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:27 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:11 ICT" name="tearDownMethod" finished-at="2025-11-10T21:14:11 ICT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -144,15 +144,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:27 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:28 ICT" duration-ms="1089" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:11 ICT" name="setUpMethod" finished-at="2025-11-10T21:14:12 ICT" duration-ms="1151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="TC08()[pri:8, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:28 ICT" name="TC08" finished-at="2025-11-10T21:12:31 ICT" duration-ms="2617" status="PASS">
+        <test-method signature="TC08()[pri:8, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:12 ICT" name="TC08" finished-at="2025-11-10T21:14:14 ICT" duration-ms="2586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC08 -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:31 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:31 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:14 ICT" name="setUpMethod" finished-at="2025-11-10T21:14:15 ICT" duration-ms="606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:14 ICT" name="tearDownMethod" finished-at="2025-11-10T21:14:14 ICT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -163,15 +167,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:31 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:31 ICT" duration-ms="607" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="TC09()[pri:9, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:31 ICT" name="TC09" finished-at="2025-11-10T21:12:31 ICT" duration-ms="40" status="PASS">
+        <test-method signature="TC09()[pri:9, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:15 ICT" name="TC09" finished-at="2025-11-10T21:14:15 ICT" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC09 -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:31 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:31 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:15 ICT" name="tearDownMethod" finished-at="2025-11-10T21:14:15 ICT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -182,15 +182,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:31 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:32 ICT" duration-ms="613" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:15 ICT" name="setUpMethod" finished-at="2025-11-10T21:14:16 ICT" duration-ms="610" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="TC10()[pri:10, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:32 ICT" name="TC10" finished-at="2025-11-10T21:12:32 ICT" duration-ms="15" status="PASS">
+        <test-method signature="TC10()[pri:10, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:16 ICT" name="TC10" finished-at="2025-11-10T21:14:16 ICT" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC10 -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:32 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:32 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:16 ICT" name="tearDownMethod" finished-at="2025-11-10T21:14:16 ICT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -201,15 +201,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:32 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:33 ICT" duration-ms="603" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:16 ICT" name="setUpMethod" finished-at="2025-11-10T21:14:16 ICT" duration-ms="605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="TC11()[pri:11, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:33 ICT" name="TC11" finished-at="2025-11-10T21:12:33 ICT" duration-ms="57" status="PASS">
+        <test-method signature="TC11()[pri:11, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:16 ICT" name="TC11" finished-at="2025-11-10T21:14:16 ICT" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC11 -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:33 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:33 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:16 ICT" name="setUpMethod" finished-at="2025-11-10T21:14:17 ICT" duration-ms="612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:16 ICT" name="tearDownMethod" finished-at="2025-11-10T21:14:16 ICT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -220,15 +224,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:33 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:33 ICT" duration-ms="628" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="TC12()[pri:12, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:33 ICT" name="TC12" finished-at="2025-11-10T21:12:33 ICT" duration-ms="80" status="PASS">
+        <test-method signature="TC12()[pri:12, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:17 ICT" name="TC12" finished-at="2025-11-10T21:14:17 ICT" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC12 -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:33 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:33 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:17 ICT" name="tearDownMethod" finished-at="2025-11-10T21:14:17 ICT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -239,15 +239,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:33 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:34 ICT" duration-ms="602" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:17 ICT" name="setUpMethod" finished-at="2025-11-10T21:14:18 ICT" duration-ms="613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="TC13()[pri:13, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:34 ICT" name="TC13" finished-at="2025-11-10T21:12:36 ICT" duration-ms="1601" status="PASS">
+        <test-method signature="TC13()[pri:13, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:18 ICT" name="TC13" finished-at="2025-11-10T21:14:19 ICT" duration-ms="1609" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC13 -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:36 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:36 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:19 ICT" name="tearDownMethod" finished-at="2025-11-10T21:14:19 ICT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -258,15 +258,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:36 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:36 ICT" duration-ms="605" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:19 ICT" name="setUpMethod" finished-at="2025-11-10T21:14:20 ICT" duration-ms="622" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="TC14()[pri:14, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:36 ICT" name="TC14" finished-at="2025-11-10T21:12:36 ICT" duration-ms="27" status="PASS">
+        <test-method signature="TC14()[pri:14, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:20 ICT" name="TC14" finished-at="2025-11-10T21:14:20 ICT" duration-ms="70" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC14 -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:36 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:36 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:20 ICT" name="tearDownMethod" finished-at="2025-11-10T21:14:20 ICT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -277,19 +277,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:36 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:37 ICT" duration-ms="609" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:20 ICT" name="setUpMethod" finished-at="2025-11-10T21:14:21 ICT" duration-ms="616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="TC15()[pri:15, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:37 ICT" name="TC15" finished-at="2025-11-10T21:12:37 ICT" duration-ms="62" status="PASS">
+        <test-method signature="TC15()[pri:15, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:21 ICT" name="TC15" finished-at="2025-11-10T21:14:21 ICT" duration-ms="72" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC15 -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:37 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:38 ICT" duration-ms="603" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:37 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:37 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:21 ICT" name="tearDownMethod" finished-at="2025-11-10T21:14:21 ICT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -300,11 +296,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method signature="TC16()[pri:16, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:38 ICT" name="TC16" finished-at="2025-11-10T21:12:39 ICT" duration-ms="1066" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:21 ICT" name="setUpMethod" finished-at="2025-11-10T21:14:21 ICT" duration-ms="611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="TC16()[pri:16, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:21 ICT" name="TC16" finished-at="2025-11-10T21:14:22 ICT" duration-ms="1051" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC16 -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:39 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:39 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:22 ICT" name="setUpMethod" finished-at="2025-11-10T21:14:23 ICT" duration-ms="1080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:22 ICT" name="tearDownMethod" finished-at="2025-11-10T21:14:22 ICT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -315,11 +319,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:39 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:40 ICT" duration-ms="1084" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="TC17()[pri:17, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:40 ICT" name="TC17" finished-at="2025-11-10T21:12:40 ICT" duration-ms="11" status="FAIL">
+        <test-method signature="TC17()[pri:17, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:23 ICT" name="TC17" finished-at="2025-11-10T21:14:23 ICT" duration-ms="8" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [10] but found [6]]]>
@@ -333,7 +333,7 @@ at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:1419)
 at org.testng.Assert.assertEquals(Assert.java:1383)
 at org.testng.Assert.assertEquals(Assert.java:1429)
-at com.mycompany.nhom08.Nhom08NGTest.TC17(Nhom08NGTest.java:388)
+at com.mycompany.nhom08.Nhom08NGTest.TC17(Nhom08NGTest.java:383)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -373,7 +373,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC17 -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:40 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:40 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:23 ICT" name="tearDownMethod" finished-at="2025-11-10T21:14:23 ICT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -384,11 +384,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:40 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:40 ICT" duration-ms="724" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:23 ICT" name="setUpMethod" finished-at="2025-11-10T21:14:24 ICT" duration-ms="606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="TC18()[pri:18, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:40 ICT" name="TC18" finished-at="2025-11-10T21:12:40 ICT" duration-ms="16" status="FAIL">
+        <test-method signature="TC18()[pri:18, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:24 ICT" name="TC18" finished-at="2025-11-10T21:14:24 ICT" duration-ms="17" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [$99.99] but found [$29.99]]]>
@@ -401,7 +401,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at com.mycompany.nhom08.Nhom08NGTest.TC18(Nhom08NGTest.java:400)
+at com.mycompany.nhom08.Nhom08NGTest.TC18(Nhom08NGTest.java:395)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -441,11 +441,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC18 -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:40 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:41 ICT" duration-ms="657" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:40 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:40 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:24 ICT" name="tearDownMethod" finished-at="2025-11-10T21:14:24 ICT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -456,7 +452,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method signature="TC19()[pri:19, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:41 ICT" name="TC19" finished-at="2025-11-10T21:12:42 ICT" duration-ms="1237" status="FAIL">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:24 ICT" name="setUpMethod" finished-at="2025-11-10T21:14:25 ICT" duration-ms="603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="TC19()[pri:19, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:25 ICT" name="TC19" finished-at="2025-11-10T21:14:26 ICT" duration-ms="1104" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [5] but found [2]]]>
@@ -469,7 +469,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at com.mycompany.nhom08.Nhom08NGTest.TC19(Nhom08NGTest.java:416)
+at com.mycompany.nhom08.Nhom08NGTest.TC19(Nhom08NGTest.java:411)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -509,7 +509,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC19 -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:42 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:42 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:26 ICT" name="setUpMethod" finished-at="2025-11-10T21:14:26 ICT" duration-ms="609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:26 ICT" name="tearDownMethod" finished-at="2025-11-10T21:14:26 ICT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -520,11 +524,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:42 ICT" name="setUpMethod" finished-at="2025-11-10T21:12:43 ICT" duration-ms="623" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="TC20()[pri:20, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:43 ICT" name="TC20" finished-at="2025-11-10T21:12:43 ICT" duration-ms="24" status="FAIL">
+        <test-method signature="TC20()[pri:20, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:26 ICT" name="TC20" finished-at="2025-11-10T21:14:26 ICT" duration-ms="49" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [All Products] but found [Products]]]>
@@ -537,7 +537,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at com.mycompany.nhom08.Nhom08NGTest.TC20(Nhom08NGTest.java:427)
+at com.mycompany.nhom08.Nhom08NGTest.TC20(Nhom08NGTest.java:422)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -577,7 +577,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC20 -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:43 ICT" name="tearDownMethod" finished-at="2025-11-10T21:12:43 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:26 ICT" name="tearDownMethod" finished-at="2025-11-10T21:14:26 ICT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -588,7 +588,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="finish()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:12:43 ICT" name="finish" finished-at="2025-11-10T21:12:43 ICT" duration-ms="150" status="PASS">
+        <test-method is-config="true" signature="finish()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@78e117e3]" started-at="2025-11-10T21:14:26 ICT" name="finish" finished-at="2025-11-10T21:14:27 ICT" duration-ms="137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finish -->
