@@ -9,40 +9,33 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">124.821</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">3.680</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.mycompany.nhom08.Nhom08NGTest</td><td><a href="#m0">test06_SortProductsByName</a></td><td rowspan="1">1762773612483</td><td rowspan="1">11531</td></tr><tr class="failedeven"><td><a href="#m1">test07_SortProductsByPrice</a></td><td rowspan="1">1762773625528</td><td rowspan="1">10376</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">com.mycompany.nhom08.Nhom08NGTest</td><td><a href="#m2">test01_Login_Success</a></td><td rowspan="1">1762773525312</td><td rowspan="1">18542</td></tr><tr class="passedeven"><td><a href="#m3">test02_Login_LockedUser</a></td><td rowspan="1">1762773545361</td><td rowspan="1">23807</td></tr><tr class="passedeven"><td><a href="#m4">test03_Login_InvalidPassword</a></td><td rowspan="1">1762773570684</td><td rowspan="1">23526</td></tr><tr class="passedeven"><td><a href="#m5">test04_AddProductToCart</a></td><td rowspan="1">1762773595722</td><td rowspan="1">1615</td></tr><tr class="passedeven"><td><a href="#m6">test05_RemoveProductFromCart</a></td><td rowspan="1">1762773598862</td><td rowspan="1">12109</td></tr><tr class="passedeven"><td><a href="#m7">test08_VerifyProductCount</a></td><td rowspan="1">1762773637422</td><td rowspan="1">19</td></tr><tr class="passedeven"><td><a href="#m8">test09_ViewProductDetails</a></td><td rowspan="1">1762773638949</td><td rowspan="1">3171</td></tr><tr class="passedeven"><td><a href="#m9">test10_NavigateToCart</a></td><td rowspan="1">1762773643629</td><td rowspan="1">2131</td></tr><tr class="passedeven"><td><a href="#m10">testMain</a></td><td rowspan="1">1762773523799</td><td rowspan="1">1</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.mycompany.nhom08.Nhom08NGTest</td><td><a href="#m0">test06_SortProductsByName</a></td><td rowspan="1">1762774106998</td><td rowspan="1">2136</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">com.mycompany.nhom08.Nhom08NGTest#test06_SortProductsByName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element ([[ChromeDriver: chrome on windows (20e2bd326d2c6899731d6ea48c7a3c49)] -&gt; class name: inventory_item_name]) to become stale (tried for 10 second(s) with 500 milliseconds interval)
+<h2>Surefire test</h2><h3 id="m0">com.mycompany.nhom08.Nhom08NGTest#test06_SortProductsByName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=142.0.7444.60)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.15&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58124}, goog:processID: 3676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58124/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20e2bd326d2c6899731d6ea48c7a3c49
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+Command: [17acc5a6ace526adc45ee4dd6995da15, isElementEnabled {id=f.2CA61584C5B031EBA40809B22E4BF94A.d.3CB6EB4BE773B51DEB0690AD313F98A8.e.14}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61327}, goog:processID: 7452, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61327/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (17acc5a6ace526adc45ee4dd6995da15)] -&gt; class name: product_sort_container]
+Session ID: 17acc5a6ace526adc45ee4dd6995da15
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.isEnabled(RemoteWebElement.java:182)
+	at org.openqa.selenium.support.ui.Select.assertSelectIsEnabled(Select.java:326)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:193)
 	at com.mycompany.nhom08.Nhom08NGTest.test06_SortProductsByName(Nhom08NGTest.java:324)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.mycompany.nhom08.Nhom08NGTest#test07_SortProductsByPrice</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element ([[ChromeDriver: chrome on windows (20e2bd326d2c6899731d6ea48c7a3c49)] -&gt; class name: inventory_item_price]) to become stale (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.15&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58124}, goog:processID: 3676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58124/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20e2bd326d2c6899731d6ea48c7a3c49
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.mycompany.nhom08.Nhom08NGTest.test07_SortProductsByPrice(Nhom08NGTest.java:353)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.mycompany.nhom08.Nhom08NGTest#test01_Login_Success</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.mycompany.nhom08.Nhom08NGTest#test02_Login_LockedUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.mycompany.nhom08.Nhom08NGTest#test03_Login_InvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.mycompany.nhom08.Nhom08NGTest#test04_AddProductToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.mycompany.nhom08.Nhom08NGTest#test05_RemoveProductFromCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.mycompany.nhom08.Nhom08NGTest#test08_VerifyProductCount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.mycompany.nhom08.Nhom08NGTest#test09_ViewProductDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.mycompany.nhom08.Nhom08NGTest#test10_NavigateToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">com.mycompany.nhom08.Nhom08NGTest#testMain</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

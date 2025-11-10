@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods, 2 failed,   9 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -106,66 +106,7 @@
                         <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="test06_SortProductsByName">test06_SortProductsByName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="test07_SortProductsByPrice">test07_SortProductsByPrice</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Surefire_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="test01_Login_Success">test01_Login_Success</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="test02_Login_LockedUser">test02_Login_LockedUser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="test03_Login_InvalidPassword">test03_Login_InvalidPassword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="test04_AddProductToCart">test04_AddProductToCart</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="test05_RemoveProductFromCart">test05_RemoveProductFromCart</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="test08_VerifyProductCount">test08_VerifyProductCount</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="test09_ViewProductDetails">test09_ViewProductDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="test10_NavigateToCart">test10_NavigateToCart</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="testMain">testMain</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -188,112 +129,35 @@
                   <a name="test06_SortProductsByName">
                   </a> <!-- test06_SortProductsByName -->
                   <span class="method-name">test06_SortProductsByName</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element ([[ChromeDriver: chrome on windows (20e2bd326d2c6899731d6ea48c7a3c49)] -&gt; class name: inventory_item_name]) to become stale (tried for 10 second(s) with 500 milliseconds interval)
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=142.0.7444.60)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.15&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58124}, goog:processID: 3676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58124/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20e2bd326d2c6899731d6ea48c7a3c49
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+Command: [17acc5a6ace526adc45ee4dd6995da15, isElementEnabled {id=f.2CA61584C5B031EBA40809B22E4BF94A.d.3CB6EB4BE773B51DEB0690AD313F98A8.e.14}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61327}, goog:processID: 7452, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61327/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (17acc5a6ace526adc45ee4dd6995da15)] -&gt; class name: product_sort_container]
+Session ID: 17acc5a6ace526adc45ee4dd6995da15
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.isEnabled(RemoteWebElement.java:182)
+	at org.openqa.selenium.support.ui.Select.assertSelectIsEnabled(Select.java:326)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:193)
 	at com.mycompany.nhom08.Nhom08NGTest.test06_SortProductsByName(Nhom08NGTest.java:324)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test07_SortProductsByPrice">
-                  </a> <!-- test07_SortProductsByPrice -->
-                  <span class="method-name">test07_SortProductsByPrice</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element ([[ChromeDriver: chrome on windows (20e2bd326d2c6899731d6ea48c7a3c49)] -&gt; class name: inventory_item_price]) to become stale (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.15&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58124}, goog:processID: 3676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58124/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20e2bd326d2c6899731d6ea48c7a3c49
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.mycompany.nhom08.Nhom08NGTest.test07_SortProductsByPrice(Nhom08NGTest.java:353)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
+... Removed 37 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.mycompany.nhom08.Nhom08NGTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test01_Login_Success">
-                  </a> <!-- test01_Login_Success -->
-                  <span class="method-name">test01_Login_Success</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test02_Login_LockedUser">
-                  </a> <!-- test02_Login_LockedUser -->
-                  <span class="method-name">test02_Login_LockedUser</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test03_Login_InvalidPassword">
-                  </a> <!-- test03_Login_InvalidPassword -->
-                  <span class="method-name">test03_Login_InvalidPassword</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test04_AddProductToCart">
-                  </a> <!-- test04_AddProductToCart -->
-                  <span class="method-name">test04_AddProductToCart</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test05_RemoveProductFromCart">
-                  </a> <!-- test05_RemoveProductFromCart -->
-                  <span class="method-name">test05_RemoveProductFromCart</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test08_VerifyProductCount">
-                  </a> <!-- test08_VerifyProductCount -->
-                  <span class="method-name">test08_VerifyProductCount</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test09_ViewProductDetails">
-                  </a> <!-- test09_ViewProductDetails -->
-                  <span class="method-name">test09_ViewProductDetails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test10_NavigateToCart">
-                  </a> <!-- test10_NavigateToCart -->
-                  <span class="method-name">test10_NavigateToCart</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMain">
-                  </a> <!-- testMain -->
-                  <span class="method-name">testMain</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
         </div> <!-- panel Surefire_suite -->
         <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -304,6 +168,11 @@ Session ID: 20e2bd326d2c6899731d6ea48c7a3c49
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;method-selectors&gt;
+      &lt;method-selector&gt;
+        &lt;selector-class name=&quot;org.apache.maven.surefire.testng.utils.MethodSelector&quot; priority=&quot;10000&quot;/&gt;
+      &lt;/method-selector&gt;
+    &lt;/method-selectors&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.mycompany.nhom08.Nhom08NGTest&quot;/&gt;
     &lt;/classes&gt;
@@ -345,56 +214,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(11);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test02_Login_LockedUser')
+data.setCell(0, 1, 'test06_SortProductsByName')
 data.setCell(0, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(0, 3, 23807);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test03_Login_InvalidPassword')
-data.setCell(1, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(1, 3, 23526);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test01_Login_Success')
-data.setCell(2, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(2, 3, 18542);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test05_RemoveProductFromCart')
-data.setCell(3, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(3, 3, 12109);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'test06_SortProductsByName')
-data.setCell(4, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(4, 3, 11531);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'test07_SortProductsByPrice')
-data.setCell(5, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(5, 3, 10376);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'test09_ViewProductDetails')
-data.setCell(6, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(6, 3, 3171);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'test10_NavigateToCart')
-data.setCell(7, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(7, 3, 2131);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'test04_AddProductToCart')
-data.setCell(8, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(8, 3, 1615);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'test08_VerifyProductCount')
-data.setCell(9, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(9, 3, 19);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testMain')
-data.setCell(10, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(10, 3, 1);
+data.setCell(0, 3, 2136);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -409,9 +238,34 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mycompany.nhom08.Nhom08NGTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testMain</span>
+                <br/>
+                <span class="ignored-method-name">test07_SortProductsByPrice</span>
+                <br/>
+                <span class="ignored-method-name">test01_Login_Success</span>
+                <br/>
+                <span class="ignored-method-name">test02_Login_LockedUser</span>
+                <br/>
+                <span class="ignored-method-name">test05_RemoveProductFromCart</span>
+                <br/>
+                <span class="ignored-method-name">test08_VerifyProductCount</span>
+                <br/>
+                <span class="ignored-method-name">test09_ViewProductDetails</span>
+                <br/>
+                <span class="ignored-method-name">test10_NavigateToCart</span>
+                <br/>
+                <span class="ignored-method-name">test04_AddProductToCart</span>
+                <br/>
+                <span class="ignored-method-name">test03_Login_InvalidPassword</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Surefire_suite" class="panel">
@@ -427,143 +281,21 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">18042 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testMain</span>
-                <span class="method-start">19558 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=testMain status=SUCCESS method=Nhom08NGTest.testMain()[pri:0, instance:com.mycompan...)</span>
-                <span class="method-start">19561 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod</span>
-                <span class="method-start">19570 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test01_Login_Success</span>
-                <span class="method-start">21071 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=test01_Login_Success status=SUCCESS method=Nhom08NGTest.test01_Login_Success()[pri:...)</span>
-                <span class="method-start">39613 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod</span>
-                <span class="method-start">39617 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test02_Login_LockedUser</span>
-                <span class="method-start">41120 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=test02_Login_LockedUser status=SUCCESS method=Nhom08NGTest.test02_Login_LockedUser(...)</span>
-                <span class="method-start">64927 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod</span>
-                <span class="method-start">64931 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test03_Login_InvalidPassword</span>
-                <span class="method-start">66443 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=test03_Login_InvalidPassword status=SUCCESS method=Nhom08NGTest.test03_Login_Invali...)</span>
-                <span class="method-start">89969 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod</span>
-                <span class="method-start">89973 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test04_AddProductToCart</span>
-                <span class="method-start">91481 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=test04_AddProductToCart status=SUCCESS method=Nhom08NGTest.test04_AddProductToCart(...)</span>
-                <span class="method-start">93097 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod</span>
-                <span class="method-start">93107 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test05_RemoveProductFromCart</span>
-                <span class="method-start">94621 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=test05_RemoveProductFromCart status=SUCCESS method=Nhom08NGTest.test05_RemoveProduc...)</span>
-                <span class="method-start">106731 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod</span>
-                <span class="method-start">106735 ms</span>
+                <span class="method-start">17266 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">test06_SortProductsByName</span>
-                <span class="method-start">108242 ms</span>
+                <span class="method-start">18783 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=test06_SortProductsByName status=FAILURE method=Nhom08NGTest.test06_SortProductsByN...)</span>
-                <span class="method-start">119776 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod</span>
-                <span class="method-start">119783 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">test07_SortProductsByPrice</span>
-                <span class="method-start">121287 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=test07_SortProductsByPrice status=FAILURE method=Nhom08NGTest.test07_SortProductsBy...)</span>
-                <span class="method-start">131664 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod</span>
-                <span class="method-start">131667 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test08_VerifyProductCount</span>
-                <span class="method-start">133181 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=test08_VerifyProductCount status=SUCCESS method=Nhom08NGTest.test08_VerifyProductCo...)</span>
-                <span class="method-start">133201 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod</span>
-                <span class="method-start">133204 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test09_ViewProductDetails</span>
-                <span class="method-start">134708 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=test09_ViewProductDetails status=SUCCESS method=Nhom08NGTest.test09_ViewProductDeta...)</span>
-                <span class="method-start">137879 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod</span>
-                <span class="method-start">137884 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test10_NavigateToCart</span>
-                <span class="method-start">139388 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=test10_NavigateToCart status=SUCCESS method=Nhom08NGTest.test10_NavigateToCart()[pr...)</span>
-                <span class="method-start">141519 ms</span>
+                <span class="method-start">20923 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">finish</span>
-                <span class="method-start">142871 ms</span>
+                <span class="method-start">20954 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,153 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="9" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-10T18:18:42 ICT" name="Surefire suite" finished-at="2025-11-10T18:20:47 ICT" duration-ms="124821">
+  <suite started-at="2025-11-10T18:28:25 ICT" name="Surefire suite" finished-at="2025-11-10T18:28:29 ICT" duration-ms="3680">
     <groups>
     </groups>
-    <test started-at="2025-11-10T18:18:42 ICT" name="Surefire test" finished-at="2025-11-10T18:20:47 ICT" duration-ms="124821">
+    <test started-at="2025-11-10T18:28:25 ICT" name="Surefire test" finished-at="2025-11-10T18:28:29 ICT" duration-ms="3680">
       <class name="com.mycompany.nhom08.Nhom08NGTest">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:18:24 ICT" name="setupSuite" finished-at="2025-11-10T18:18:42 ICT" duration-ms="18029" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@2ea227af]" started-at="2025-11-10T18:28:08 ICT" name="setupSuite" finished-at="2025-11-10T18:28:25 ICT" duration-ms="17253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:18:42 ICT" name="setUpMethod" finished-at="2025-11-10T18:18:43 ICT" duration-ms="1516" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@2ea227af]" started-at="2025-11-10T18:28:25 ICT" name="setUpMethod" finished-at="2025-11-10T18:28:26 ICT" duration-ms="1515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="testMain()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:18:43 ICT" name="testMain" finished-at="2025-11-10T18:18:43 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMain -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:18:43 ICT" name="tearDownMethod" finished-at="2025-11-10T18:18:43 ICT" duration-ms="8" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testMain status=SUCCESS method=Nhom08NGTest.testMain()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:18:43 ICT" name="setUpMethod" finished-at="2025-11-10T18:18:45 ICT" duration-ms="1501" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="test01_Login_Success()[pri:1, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:18:45 ICT" name="test01_Login_Success" finished-at="2025-11-10T18:19:03 ICT" duration-ms="18542" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test01_Login_Success -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:19:03 ICT" name="tearDownMethod" finished-at="2025-11-10T18:19:03 ICT" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test01_Login_Success status=SUCCESS method=Nhom08NGTest.test01_Login_Success()[pri:1, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:19:03 ICT" name="setUpMethod" finished-at="2025-11-10T18:19:05 ICT" duration-ms="1503" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="test02_Login_LockedUser()[pri:2, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:19:05 ICT" name="test02_Login_LockedUser" finished-at="2025-11-10T18:19:29 ICT" duration-ms="23807" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test02_Login_LockedUser -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:19:29 ICT" name="tearDownMethod" finished-at="2025-11-10T18:19:29 ICT" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test02_Login_LockedUser status=SUCCESS method=Nhom08NGTest.test02_Login_LockedUser()[pri:2, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:19:29 ICT" name="setUpMethod" finished-at="2025-11-10T18:19:30 ICT" duration-ms="1512" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="test03_Login_InvalidPassword()[pri:3, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:19:30 ICT" name="test03_Login_InvalidPassword" finished-at="2025-11-10T18:19:54 ICT" duration-ms="23526" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test03_Login_InvalidPassword -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:19:54 ICT" name="tearDownMethod" finished-at="2025-11-10T18:19:54 ICT" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test03_Login_InvalidPassword status=SUCCESS method=Nhom08NGTest.test03_Login_InvalidPassword()[pri:3, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:19:54 ICT" name="setUpMethod" finished-at="2025-11-10T18:19:55 ICT" duration-ms="1508" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="test04_AddProductToCart()[pri:4, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:19:55 ICT" name="test04_AddProductToCart" finished-at="2025-11-10T18:19:57 ICT" duration-ms="1615" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test04_AddProductToCart -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:19:57 ICT" name="tearDownMethod" finished-at="2025-11-10T18:19:57 ICT" duration-ms="9" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test04_AddProductToCart status=SUCCESS method=Nhom08NGTest.test04_AddProductToCart()[pri:4, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:19:57 ICT" name="setUpMethod" finished-at="2025-11-10T18:19:58 ICT" duration-ms="1514" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="test05_RemoveProductFromCart()[pri:5, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:19:58 ICT" name="test05_RemoveProductFromCart" finished-at="2025-11-10T18:20:10 ICT" duration-ms="12109" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test05_RemoveProductFromCart -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:20:10 ICT" name="tearDownMethod" finished-at="2025-11-10T18:20:10 ICT" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test05_RemoveProductFromCart status=SUCCESS method=Nhom08NGTest.test05_RemoveProductFromCart()[pri:5, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:20:10 ICT" name="setUpMethod" finished-at="2025-11-10T18:20:12 ICT" duration-ms="1507" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="test06_SortProductsByName()[pri:6, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:20:12 ICT" name="test06_SortProductsByName" finished-at="2025-11-10T18:20:24 ICT" duration-ms="11531" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="test06_SortProductsByName()[pri:6, instance:com.mycompany.nhom08.Nhom08NGTest@2ea227af]" started-at="2025-11-10T18:28:26 ICT" name="test06_SortProductsByName" finished-at="2025-11-10T18:28:29 ICT" duration-ms="2136" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element ([[ChromeDriver: chrome on windows (20e2bd326d2c6899731d6ea48c7a3c49)] -> class name: inventory_item_name]) to become stale (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=142.0.7444.60)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58124}, goog:processID: 3676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58124/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20e2bd326d2c6899731d6ea48c7a3c49]]>
+Command: [17acc5a6ace526adc45ee4dd6995da15, isElementEnabled {id=f.2CA61584C5B031EBA40809B22E4BF94A.d.3CB6EB4BE773B51DEB0690AD313F98A8.e.14}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61327}, goog:processID: 7452, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61327/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (17acc5a6ace526adc45ee4dd6995da15)] -> class name: product_sort_container]
+Session ID: 17acc5a6ace526adc45ee4dd6995da15]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element ([[ChromeDriver: chrome on windows (20e2bd326d2c6899731d6ea48c7a3c49)] -> class name: inventory_item_name]) to become stale (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=142.0.7444.60)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58124}, goog:processID: 3676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58124/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20e2bd326d2c6899731d6ea48c7a3c49
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+Command: [17acc5a6ace526adc45ee4dd6995da15, isElementEnabled {id=f.2CA61584C5B031EBA40809B22E4BF94A.d.3CB6EB4BE773B51DEB0690AD313F98A8.e.14}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61327}, goog:processID: 7452, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61327/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (17acc5a6ace526adc45ee4dd6995da15)] -> class name: product_sort_container]
+Session ID: 17acc5a6ace526adc45ee4dd6995da15
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.isEnabled(RemoteWebElement.java:182)
+at org.openqa.selenium.support.ui.Select.assertSelectIsEnabled(Select.java:326)
+at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:193)
 at com.mycompany.nhom08.Nhom08NGTest.test06_SortProductsByName(Nhom08NGTest.java:324)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -184,153 +92,22 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test06_SortProductsByName -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:20:24 ICT" name="tearDownMethod" finished-at="2025-11-10T18:20:24 ICT" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@2ea227af]" started-at="2025-11-10T18:28:29 ICT" name="tearDownMethod" finished-at="2025-11-10T18:28:29 ICT" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test06_SortProductsByName status=FAILURE method=Nhom08NGTest.test06_SortProductsByName()[pri:6, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7] output={null}]]]>
+                <![CDATA[[TestResult name=test06_SortProductsByName status=FAILURE method=Nhom08NGTest.test06_SortProductsByName()[pri:6, instance:com.mycompany.nhom08.Nhom08NGTest@2ea227af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:20:24 ICT" name="setUpMethod" finished-at="2025-11-10T18:20:25 ICT" duration-ms="1504" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="test07_SortProductsByPrice()[pri:7, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:20:25 ICT" name="test07_SortProductsByPrice" finished-at="2025-11-10T18:20:35 ICT" duration-ms="10376" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element ([[ChromeDriver: chrome on windows (20e2bd326d2c6899731d6ea48c7a3c49)] -> class name: inventory_item_price]) to become stale (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58124}, goog:processID: 3676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58124/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20e2bd326d2c6899731d6ea48c7a3c49]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element ([[ChromeDriver: chrome on windows (20e2bd326d2c6899731d6ea48c7a3c49)] -> class name: inventory_item_price]) to become stale (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58124}, goog:processID: 3676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58124/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20e2bd326d2c6899731d6ea48c7a3c49
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-at com.mycompany.nhom08.Nhom08NGTest.test07_SortProductsByPrice(Nhom08NGTest.java:353)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test07_SortProductsByPrice -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:20:35 ICT" name="tearDownMethod" finished-at="2025-11-10T18:20:35 ICT" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test07_SortProductsByPrice status=FAILURE method=Nhom08NGTest.test07_SortProductsByPrice()[pri:7, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:20:35 ICT" name="setUpMethod" finished-at="2025-11-10T18:20:37 ICT" duration-ms="1514" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="test08_VerifyProductCount()[pri:8, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:20:37 ICT" name="test08_VerifyProductCount" finished-at="2025-11-10T18:20:37 ICT" duration-ms="19" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test08_VerifyProductCount -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:20:37 ICT" name="tearDownMethod" finished-at="2025-11-10T18:20:37 ICT" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test08_VerifyProductCount status=SUCCESS method=Nhom08NGTest.test08_VerifyProductCount()[pri:8, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:20:37 ICT" name="setUpMethod" finished-at="2025-11-10T18:20:38 ICT" duration-ms="1504" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="test09_ViewProductDetails()[pri:9, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:20:38 ICT" name="test09_ViewProductDetails" finished-at="2025-11-10T18:20:42 ICT" duration-ms="3171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test09_ViewProductDetails -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:20:42 ICT" name="tearDownMethod" finished-at="2025-11-10T18:20:42 ICT" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test09_ViewProductDetails status=SUCCESS method=Nhom08NGTest.test09_ViewProductDetails()[pri:9, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:20:42 ICT" name="setUpMethod" finished-at="2025-11-10T18:20:43 ICT" duration-ms="1504" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="test10_NavigateToCart()[pri:10, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:20:43 ICT" name="test10_NavigateToCart" finished-at="2025-11-10T18:20:45 ICT" duration-ms="2131" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test10_NavigateToCart -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:20:45 ICT" name="tearDownMethod" finished-at="2025-11-10T18:20:47 ICT" duration-ms="1332" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test10_NavigateToCart status=SUCCESS method=Nhom08NGTest.test10_NavigateToCart()[pri:10, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="finish()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@7c0c77c7]" started-at="2025-11-10T18:20:47 ICT" name="finish" finished-at="2025-11-10T18:21:00 ICT" duration-ms="13454" status="PASS">
+        <test-method is-config="true" signature="finish()[pri:0, instance:com.mycompany.nhom08.Nhom08NGTest@2ea227af]" started-at="2025-11-10T18:28:29 ICT" name="finish" finished-at="2025-11-10T18:28:32 ICT" duration-ms="3236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finish -->

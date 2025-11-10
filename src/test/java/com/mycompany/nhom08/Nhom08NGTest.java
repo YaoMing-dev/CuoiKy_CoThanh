@@ -27,8 +27,8 @@ import java.util.Map;
 
 /**
  * @author miyam
- * 20 TEST CASES: 16 PASS + 4 FAIL = 20% FAIL RATE
- * QUAN TRONG: Login 1 lan duy nhat, giu session xuyеn suot test suite
+ * 10 TEST CASES: 8 PASS + 2 FAIL = 20% FAIL RATE
+ 
  */
 public class Nhom08NGTest {
     
@@ -49,8 +49,8 @@ public class Nhom08NGTest {
     public void setupSuite() throws InterruptedException {
         Nhom08.CSVReporter.clear();
         System.out.println("=".repeat(60));
-        System.out.println("BAT DAU CHAY 20 TEST CASES - SAUCEDEMO.COM");
-        System.out.println("(16 PASS + 4 FAIL = 20% FAIL RATE)");
+        System.out.println("BAT DAU CHAY 10 TEST CASES - SAUCEDEMO.COM");
+        System.out.println("(8 PASS + 2 FAIL = 20% FAIL RATE)");
         System.out.println("=".repeat(60));
         
         WebDriverManager.chromedriver().setup();
@@ -82,7 +82,7 @@ public class Nhom08NGTest {
         // LOGIN 1 LAN DUY NHAT CHO TOAN BO TEST SUITE
         System.out.println("\n[SETUP] Dang nhap 1 lan cho toan bo test suite...");
         login(VALID_USERNAME, VALID_PASSWORD);
-        System.out.println("[SETUP] Da dang nhap thanh cong - GIU SESSION XUYЕN SUOT");
+        System.out.println("[SETUP] Da dang nhap thanh cong ");
     }
     
     @BeforeMethod
@@ -184,7 +184,7 @@ public class Nhom08NGTest {
         }
     }
     
-    // ========== 16 TEST CASES PASS ==========
+    // ========== 8 TEST CASES PASS ==========
     
     @Test(priority = 1)
     public void test01_Login_Success() throws InterruptedException {
@@ -300,37 +300,29 @@ public class Nhom08NGTest {
         System.out.println("[OK] Test 5 hoan thanh");
     }
 
-    @Test(priority = 6)
+   @Test(priority = 6)
     public void test06_SortProductsByName() throws InterruptedException {
         System.out.println("\n[TEST 6] Dang test sap xep san pham theo ten...");
+        // DA LOGIN ROI, KHONG CAN LOGIN NUA
         
         Select sortDropdown = new Select(driver.findElement(By.className("product_sort_container")));
         sortDropdown.selectByValue("az");
-        Thread.sleep(1000); // Có thể giữ sleep này vì nó là sort mặc định, hoặc wait luôn
-
+        Thread.sleep(1000);
+        
         List<WebElement> productNames = driver.findElements(By.className("inventory_item_name"));
         String firstName = productNames.get(0).getText();
         assertTrue(firstName.startsWith("Sauce Labs"));
         
-        // --- PHAN SUA LOI O DAY ---
-        
-        // 1. Lay ra 1 element dai dien cho danh sach CU
-        WebElement firstProduct = driver.findElements(By.className("inventory_item_name")).get(0);
-        
-        // 2. Thuc hien hanh dong sort
         sortDropdown.selectByValue("za");
+        Thread.sleep(1000);
         
-        // 3. DOI CHO DEN KHI element CU bien mat (nghia la list MOI da duoc ve xong)
-        wait.until(ExpectedConditions.stalenessOf(firstProduct));
-        
-        // 4. BAY GIO moi lay danh sach MOI
         productNames = driver.findElements(By.className("inventory_item_name"));
         String lastFirst = productNames.get(0).getText();
         assertTrue(lastFirst.contains("T-Shirt") || lastFirst.contains("Test"));
         
         // Reset ve sap xep mac dinh
         sortDropdown.selectByValue("az");
-        Thread.sleep(500); // Sleep này ok vì chỉ là cleanup
+        Thread.sleep(500);
         
         System.out.println("[OK] Test 6 hoan thanh");
     }
@@ -338,21 +330,12 @@ public class Nhom08NGTest {
     @Test(priority = 7)
     public void test07_SortProductsByPrice() throws InterruptedException {
         System.out.println("\n[TEST 7] Dang test sap xep san pham theo gia...");
+        // DA LOGIN ROI, KHONG CAN LOGIN NUA
         
         Select sortDropdown = new Select(driver.findElement(By.className("product_sort_container")));
-        
-        // --- PHAN SUA LOI O DAY ---
-
-        // 1. Lay ra 1 element dai dien cho danh sach CU (mac dinh la A-Z)
-        WebElement firstPriceElement = driver.findElements(By.className("inventory_item_price")).get(0);
-        
-        // 2. Thuc hien hanh dong sort
         sortDropdown.selectByValue("lohi");
+        Thread.sleep(1000);
         
-        // 3. DOI CHO DEN KHI element CU bien mat
-        wait.until(ExpectedConditions.stalenessOf(firstPriceElement));
-        
-        // 4. BAY GIO moi lay danh sach MOI
         List<WebElement> prices = driver.findElements(By.className("inventory_item_price"));
         String firstPrice = prices.get(0).getText().replace("$", "");
         double price1 = Double.parseDouble(firstPrice);

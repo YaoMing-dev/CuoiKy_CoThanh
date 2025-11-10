@@ -6,7 +6,6 @@
       <class name="com.mycompany.nhom08.Nhom08NGTest">
         <methods>
           <include name="setupSuite"/>
-          <include name="test07_SortProductsByPrice"/>
           <include name="tearDownMethod"/>
           <include name="finish"/>
           <include name="setUpMethod"/>
