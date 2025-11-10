@@ -1,6 +1,3 @@
-/*
- * File nay bay gio chua 20 test case Selenium cho saucedemo.com
- */
 package com.mycompany.nhom08;
 
 import static org.testng.Assert.*;
@@ -21,11 +18,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- *
- * @author miyam
- 
- */
 public class LoginNGTest { 
     
     private WebDriver driver;
@@ -51,17 +43,10 @@ public class LoginNGTest {
         
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start-maximized");
-        options.addArguments("--disable-blink-features=AutomationControlled");
-        options.addArguments("--disable-save-password-bubble");
-        options.addArguments("--disable-features=PasswordManager,PasswordCheck,PasswordLeakDetection");
+        
+       
         options.addArguments("--incognito");
-      
-        Map<String, Object> prefs = new HashMap<>();
-        prefs.put("credentials_enable_service", false);
-        prefs.put("profile.password_manager_enabled", false);
-        options.setExperimentalOption("prefs", prefs);
-        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+
         
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -83,13 +68,13 @@ public class LoginNGTest {
     public void setUpMethod() throws Exception {
         startTime = System.currentTimeMillis();
         
-       
+        
         if (!driver.getCurrentUrl().contains("inventory.html")) {
             System.out.println("[WARNING] Phat hien trang thai da bi log-out. Dang thu vao lai trang inventory...");
             driver.get(BASE_URL + "inventory.html");
             Thread.sleep(1000);
             
-          
+           
             if (!driver.getCurrentUrl().contains("inventory.html")) {
                  System.out.println("[RECOVERY] Bi day ve trang login. Dang dang nhap lai...");
                  login(VALID_USERNAME, VALID_PASSWORD);
@@ -109,14 +94,14 @@ public class LoginNGTest {
         String testName = result.getMethod().getMethodName();
         String status = result.isSuccess() ? "PASS" : "FAIL";
         
-        Login.CSVReporter.addResult(testName, status, duration); // Giả định Nhom08.CSVReporter tồn tại
+        Login.CSVReporter.addResult(testName, status, duration); 
         System.out.println(">> " + testName + ": " + status + " (" + duration + "ms)");
     }
     
     @AfterSuite
     public void finish() {
         System.out.println("=".repeat(60));
-        Login.CSVReporter.writeToCSV(); // Giả định Nhom08.CSVReporter tồn tại
+        Login.CSVReporter.writeToCSV(); 
         System.out.println("=".repeat(60));
         
         if (driver != null) {
@@ -130,7 +115,7 @@ public class LoginNGTest {
     public void TC01() throws InterruptedException {
         System.out.println("\n[TEST 1] Dang test dang nhap thanh cong...");
         
-      
+        
         safeLogout();
         
        
@@ -141,7 +126,8 @@ public class LoginNGTest {
         WebElement title = wait.until(ExpectedConditions.presenceOfElementLocated(By.className("title")));
         assertEquals(title.getText(), "Products");
         
-       
+        
+        Thread.sleep(1500); 
         System.out.println("[OK] Test 1 hoan thanh (Da dang nhap lai)");
     }
 
@@ -150,21 +136,22 @@ public class LoginNGTest {
     public void TC02() throws InterruptedException {
         System.out.println("\n[TEST 2] Dang test locked user...");
         
-       
+        
         safeLogout();
         
-     
+      
         login(LOCKED_USERNAME, VALID_PASSWORD);
         
-       
+        
         WebElement errorMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[data-test='error']")));
         assertTrue(errorMsg.getText().contains("locked out"));
         
-      
+        
         System.out.println("[TEST 2] Dang log in lai (standard_user) de chuan bi cho test tiep theo...");
         login(VALID_USERNAME, VALID_PASSWORD);
         wait.until(ExpectedConditions.urlContains("inventory.html")); 
         
+        Thread.sleep(1500); 
         System.out.println("[OK] Test 2 hoan thanh (Da khoi phuc trang thai)");
     }
 
@@ -173,21 +160,22 @@ public class LoginNGTest {
     public void TC03() throws InterruptedException {
         System.out.println("\n[TEST 3] Dang test mat khau sai...");
         
-       
+        
         safeLogout();
         
-       
+        
         login(VALID_USERNAME, "wrong_password");
         
-       
+        
         WebElement errorMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[data-test='error']")));
         assertTrue(errorMsg.getText().contains("do not match"));
         
-      
+        
         System.out.println("[TEST 3] Dang log in lai (standard_user) de chuan bi cho test tiep theo...");
         login(VALID_USERNAME, VALID_PASSWORD);
-        wait.until(ExpectedConditions.urlContains("inventory.html")); // Dam bao dang nhap thanh cong
+        wait.until(ExpectedConditions.urlContains("inventory.html")); 
         
+        Thread.sleep(1500); 
         System.out.println("[OK] Test 3 hoan thanh (Da khoi phuc trang thai)");
     }
 
@@ -203,23 +191,25 @@ public class LoginNGTest {
             assertFalse(desc.getText().isEmpty());
         }
         
+        Thread.sleep(1500); 
         System.out.println("[TC04] PASS");
     }
 
-   
     
+     
     @Test(priority = 5)
     public void TC05() throws InterruptedException {
         System.out.println("\n[TC05] Kiem tra chuyen den trang gio hang");
         
         driver.findElement(By.className("shopping_cart_link")).click();
-        Thread.sleep(1000); // Giam thoi gian cho
+        Thread.sleep(1000); 
         
         assertTrue(driver.getCurrentUrl().contains("cart.html"));
         
         WebElement cartTitle = driver.findElement(By.className("title"));
         assertEquals(cartTitle.getText(), "Your Cart");
         
+        Thread.sleep(1500); 
         System.out.println("[TC05] PASS");
     }
 
@@ -231,10 +221,11 @@ public class LoginNGTest {
         Thread.sleep(1000);
         
         driver.findElement(By.id("continue-shopping")).click();
-        Thread.sleep(1000); // Giam thoi gian cho
+        Thread.sleep(1000); 
         
         assertTrue(driver.getCurrentUrl().contains("inventory.html"));
         
+        Thread.sleep(1500); 
         System.out.println("[TC06] PASS");
     }
 
@@ -244,13 +235,14 @@ public class LoginNGTest {
         
         List<WebElement> productNames = driver.findElements(By.className("inventory_item_name"));
         productNames.get(0).click();
-        Thread.sleep(1000); // Giam thoi gian cho
+        Thread.sleep(1000); 
         
         assertTrue(driver.getCurrentUrl().contains("inventory-item.html"));
         
         WebElement productDetail = driver.findElement(By.className("inventory_details_name"));
         assertTrue(productDetail.isDisplayed());
         
+        Thread.sleep(1500); 
         System.out.println("[TC07] PASS");
     }
 
@@ -264,10 +256,11 @@ public class LoginNGTest {
         
         WebElement backButton = driver.findElement(By.id("back-to-products"));
         backButton.click();
-        Thread.sleep(1000); // Giam thoi gian cho
+        Thread.sleep(1000); 
         
         assertTrue(driver.getCurrentUrl().contains("inventory.html"));
         
+        Thread.sleep(1500); 
         System.out.println("[TC08] PASS");
     }
 
@@ -278,6 +271,7 @@ public class LoginNGTest {
         List<WebElement> products = driver.findElements(By.className("inventory_item"));
         assertEquals(products.size(), 6);
         
+        Thread.sleep(1500); 
         System.out.println("[TC09] PASS");
     }
 
@@ -290,6 +284,7 @@ public class LoginNGTest {
         assertTrue(appLogo.isDisplayed());
         assertEquals(appLogo.getText(), "Swag Labs");
         
+        Thread.sleep(1500); 
         System.out.println("[TC10] PASS");
     }
 
@@ -305,6 +300,7 @@ public class LoginNGTest {
             assertFalse(name.getText().isEmpty());
         }
         
+        Thread.sleep(1500); 
         System.out.println("[TC11] PASS");
     }
 
@@ -320,6 +316,7 @@ public class LoginNGTest {
             assertTrue(price.getText().startsWith("$"));
         }
         
+        Thread.sleep(1500); 
         System.out.println("[TC12] PASS");
     }
 
@@ -331,16 +328,16 @@ public class LoginNGTest {
         assertTrue(menuButton.isDisplayed());
         
         menuButton.click();
-        Thread.sleep(1000); // Giam thoi gian cho
+        Thread.sleep(1000); 
         
         WebElement menuWrap = driver.findElement(By.className("bm-menu-wrap"));
         assertTrue(menuWrap.isDisplayed());
         
-        // Click nut "X" de dong menu lai, tranh anh huong test sau
         WebElement closeButton = driver.findElement(By.id("react-burger-cross-btn"));
         closeButton.click();
         Thread.sleep(500);
 
+        Thread.sleep(1500); 
         System.out.println("[TC13] PASS");
     }
 
@@ -355,6 +352,7 @@ public class LoginNGTest {
             assertTrue(link.isDisplayed());
         }
         
+        Thread.sleep(1500); 
         System.out.println("[TC14] PASS");
     }
 
@@ -369,6 +367,7 @@ public class LoginNGTest {
             assertTrue(img.isDisplayed());
         }
         
+        Thread.sleep(1500); 
         System.out.println("[TC15] PASS");
     }
 
@@ -380,10 +379,11 @@ public class LoginNGTest {
         assertTrue(cartIcon.isDisplayed());
         
         cartIcon.click();
-        Thread.sleep(1000); // Giam thoi gian cho
+        Thread.sleep(1000); 
         
         assertTrue(driver.getCurrentUrl().contains("cart.html"));
         
+        Thread.sleep(1500); 
         System.out.println("[TC16] PASS");
     }
     
@@ -395,6 +395,7 @@ public class LoginNGTest {
         
         assertEquals(products.size(), 10);
         
+        Thread.sleep(1500); 
         System.out.println("[TC17] FAIL");
     }
     
@@ -407,6 +408,7 @@ public class LoginNGTest {
         
         assertEquals(firstPrice, "$99.99");
         
+        Thread.sleep(1500); 
         System.out.println("[TC18] FAIL");
     }
     
@@ -417,12 +419,13 @@ public class LoginNGTest {
         driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
         Thread.sleep(500);
         driver.findElement(By.id("add-to-cart-sauce-labs-bike-light")).click();
-        Thread.sleep(500); // Giam thoi gian cho
+        Thread.sleep(500); 
         
         WebElement cartBadge = driver.findElement(By.className("shopping_cart_badge"));
         
         assertEquals(cartBadge.getText(), "5");
         
+        Thread.sleep(1500); 
         System.out.println("[TC19] FAIL");
     }
     
@@ -434,16 +437,12 @@ public class LoginNGTest {
         
         assertEquals(title.getText(), "All Products");
         
+        Thread.sleep(1500); 
         System.out.println("[TC20] FAIL");
     }
     
-    // --- CAC HAM HELPER DA DUOC BO SUNG ---
     
-    /**
-     * Ham helper de thuc hien dang nhap
-     */
     private void login(String username, String password) throws InterruptedException {
-        // Dam bao dang o trang login
         if (!driver.getCurrentUrl().equals(BASE_URL)) {
             driver.get(BASE_URL);
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("login-button")));
@@ -461,33 +460,28 @@ public class LoginNGTest {
         Thread.sleep(200);
         
         driver.findElement(By.id("login-button")).click();
-        Thread.sleep(500); // Cho de trang bat dau load
+        Thread.sleep(500); 
     }
 
-    /**
-     * Ham helper de dang xuat an toan
-     */
+    
     private void safeLogout() throws InterruptedException {
-        // Chi dang xuat neu dang o trong trang inventory
         if (driver.getCurrentUrl().contains("inventory.html")) {
             try {
                 WebElement menuButton = driver.findElement(By.id("react-burger-menu-btn"));
                 menuButton.click();
-                Thread.sleep(500); // Cho menu mo
+                Thread.sleep(500); 
 
                 WebElement logoutLink = wait.until(ExpectedConditions.elementToBeClickable(By.id("logout_sidebar_link")));
                 logoutLink.click();
 
-                wait.until(ExpectedConditions.urlToBe(BASE_URL)); // Cho de quay ve trang login
+                wait.until(ExpectedConditions.urlToBe(BASE_URL)); 
                 Thread.sleep(200);
             } catch (Exception e) {
                 System.err.println("Loi khi logout: " + e.getMessage());
-                // Giai phap an toan: Neu loi thi cu dieu huong ve trang chu
                 driver.get(BASE_URL);
                 Thread.sleep(500);
             }
         } else {
-             // Neu khong o trang inventory (vi du: trang cart), quay ve trang chu
              driver.get(BASE_URL);
              Thread.sleep(500);
         }
