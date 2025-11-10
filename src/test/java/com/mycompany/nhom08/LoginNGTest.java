@@ -320,26 +320,30 @@ public class LoginNGTest {
         System.out.println("[TC12] PASS");
     }
 
-    @Test(priority = 13)
-    public void TC13() throws InterruptedException {
-        System.out.println("\n[TC13] Kiem tra hamburger menu");
-        
-        WebElement menuButton = driver.findElement(By.id("react-burger-menu-btn"));
-        assertTrue(menuButton.isDisplayed());
-        
-        menuButton.click();
-        Thread.sleep(1000); 
-        
-        WebElement menuWrap = driver.findElement(By.className("bm-menu-wrap"));
-        assertTrue(menuWrap.isDisplayed());
-        
-        WebElement closeButton = driver.findElement(By.id("react-burger-cross-btn"));
-        closeButton.click();
-        Thread.sleep(500);
-
-        Thread.sleep(1500); 
-        System.out.println("[TC13] PASS");
-    }
+  @Test(priority = 13)
+public void TC13() throws InterruptedException {
+    System.out.println("\n[TC13] Kiem tra hamburger menu");
+    
+    WebElement menuButton = driver.findElement(By.id("react-burger-menu-btn"));
+    assertTrue(menuButton.isDisplayed());
+    
+    menuButton.click();
+    Thread.sleep(1000);
+    
+    WebElement menuWrap = driver.findElement(By.className("bm-menu-wrap"));
+    assertTrue(menuWrap.isDisplayed());
+    
+    WebElement closeButton = driver.findElement(By.id("react-burger-cross-btn"));
+    closeButton.click();
+    Thread.sleep(1500); // Tăng thời gian chờ để menu đóng hoàn toàn
+    
+    // Kiểm tra menu đã đóng bằng cách check attribute
+    menuWrap = driver.findElement(By.className("bm-menu-wrap"));
+    String ariaHidden = menuWrap.getAttribute("aria-hidden");
+    assertTrue(ariaHidden.equals("true"), "Menu should be hidden");
+    
+    System.out.println("[TC13] PASS");
+}
 
     @Test(priority = 14)
     public void TC14() throws InterruptedException {
