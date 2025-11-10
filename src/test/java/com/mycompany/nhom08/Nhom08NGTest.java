@@ -25,7 +25,9 @@ public class Nhom08NGTest {
     private static final String BASE_URL = "https://www.saucedemo.com/";
     private long startTime;
     
+    // --- BIEN DA DUOC BO SUNG ---
     private static final String VALID_USERNAME = "standard_user";
+    private static final String LOCKED_USERNAME = "locked_out_user"; // <-- DA THEM
     private static final String VALID_PASSWORD = "secret_sauce";
     
     public Nhom08NGTest() {
@@ -60,14 +62,10 @@ public class Nhom08NGTest {
         
         System.out.println("\n[SETUP] Dang nhap 1 lan duy nhat...");
         driver.get(BASE_URL);
-        Thread.sleep(2000);
+        Thread.sleep(1000); // Giam thoi gian cho
         
-        driver.findElement(By.id("user-name")).sendKeys(VALID_USERNAME);
-        Thread.sleep(500);
-        driver.findElement(By.id("password")).sendKeys(VALID_PASSWORD);
-        Thread.sleep(500);
-        driver.findElement(By.id("login-button")).click();
-        Thread.sleep(3000);
+        // Su dung ham helper de dang nhap
+        login(VALID_USERNAME, VALID_PASSWORD);
         
         wait.until(ExpectedConditions.urlContains("inventory.html"));
         System.out.println("[SETUP] Da dang nhap thanh cong - Bat dau chay test");
@@ -77,12 +75,23 @@ public class Nhom08NGTest {
     public void setUpMethod() throws Exception {
         startTime = System.currentTimeMillis();
         
+        // Logic nay van dung de dam bao cac test 4-20 luon bat dau o trang inventory
         if (!driver.getCurrentUrl().contains("inventory.html")) {
+            System.out.println("[WARNING] Phat hien trang thai da bi log-out. Dang thu vao lai trang inventory...");
             driver.get(BASE_URL + "inventory.html");
-            Thread.sleep(2000);
+            Thread.sleep(1000);
+            
+            // Neu vao lai ma van bi day ve trang login thi tien hanh login lai
+            if (!driver.getCurrentUrl().contains("inventory.html")) {
+                 System.out.println("[RECOVERY] Bi day ve trang login. Dang dang nhap lai...");
+                 login(VALID_USERNAME, VALID_PASSWORD);
+                 wait.until(ExpectedConditions.urlContains("inventory.html"));
+            }
         } else {
+             // Neu da o trang inventory, chi can refresh de reset state (vi du: xoa item khoi cart)
             driver.navigate().refresh();
-            Thread.sleep(2000);
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("react-burger-menu-btn")));
+            Thread.sleep(500);
         }
     }
     
@@ -108,62 +117,95 @@ public class Nhom08NGTest {
         }
     }
     
-    @Test(priority = 1)
-    public void TC01() throws InterruptedException {
-        System.out.println("\n[TC01] Kiem tra tieu de trang");
+     // --- TEST 1 (DA SUA) ---
+     @Test(priority = 1)
+    public void test01_Login_Success() throws InterruptedException {
+        System.out.println("\n[TEST 1] Dang test dang nhap thanh cong...");
         
+        // 1. Dang xuat khoi phien lam viec cua @BeforeSuite
+        safeLogout();
+        
+        // 2. Thuc hien test dang nhap
+        login(VALID_USERNAME, VALID_PASSWORD);
+        
+        // 3. Kiem tra ket qua
+        assertTrue(driver.getCurrentUrl().contains("inventory.html"));
         WebElement title = wait.until(ExpectedConditions.presenceOfElementLocated(By.className("title")));
         assertEquals(title.getText(), "Products");
         
-        System.out.println("[TC01] PASS");
+        // 4. KHONG dang xuat, de giu trang thai cho test tiep theo
+        System.out.println("[OK] Test 1 hoan thanh (Da dang nhap lai)");
     }
 
+    // --- TEST 2 (DA SUA) ---
     @Test(priority = 2)
-    public void TC02() throws InterruptedException {
-        System.out.println("\n[TC02] Kiem tra inventory container");
+    public void test02_Login_LockedUser() throws InterruptedException {
+        System.out.println("\n[TEST 2] Dang test locked user...");
         
-        WebElement inventoryContainer = driver.findElement(By.className("inventory_list"));
-        assertTrue(inventoryContainer.isDisplayed());
+        // 1. Dang xuat
+        safeLogout();
         
-        System.out.println("[TC02] PASS");
+        // 2. Thuc hien test voi locked user
+        login(LOCKED_USERNAME, VALID_PASSWORD);
+        
+        // 3. Kiem tra loi
+        WebElement errorMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[data-test='error']")));
+        assertTrue(errorMsg.getText().contains("locked out"));
+        
+        // 4. PHUC HOI TRANG THAI: Dang nhap lai bang user thuong
+        System.out.println("[TEST 2] Dang log in lai (standard_user) de chuan bi cho test tiep theo...");
+        login(VALID_USERNAME, VALID_PASSWORD);
+        wait.until(ExpectedConditions.urlContains("inventory.html")); // Dam bao dang nhap thanh cong
+        
+        System.out.println("[OK] Test 2 hoan thanh (Da khoi phuc trang thai)");
     }
 
+    // --- TEST 3 (DA SUA) ---
     @Test(priority = 3)
-    public void TC03() throws InterruptedException {
-        System.out.println("\n[TC03] Kiem tra them san pham vao gio");
+    public void test03_Login_InvalidPassword() throws InterruptedException {
+        System.out.println("\n[TEST 3] Dang test mat khau sai...");
         
-        WebElement addButton = driver.findElement(By.id("add-to-cart-sauce-labs-backpack"));
-        addButton.click();
-        Thread.sleep(1000);
+        // 1. Dang xuat
+        safeLogout();
         
-        WebElement removeButton = driver.findElement(By.id("remove-sauce-labs-backpack"));
-        assertTrue(removeButton.isDisplayed());
+        // 2. Thuc hien test voi mat khau sai
+        login(VALID_USERNAME, "wrong_password");
         
-        System.out.println("[TC03] PASS");
+        // 3. Kiem tra loi
+        WebElement errorMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[data-test='error']")));
+        assertTrue(errorMsg.getText().contains("do not match"));
+        
+        // 4. PHUC HOI TRANG THAI: Dang nhap lai bang user thuong
+        System.out.println("[TEST 3] Dang log in lai (standard_user) de chuan bi cho test tiep theo...");
+        login(VALID_USERNAME, VALID_PASSWORD);
+        wait.until(ExpectedConditions.urlContains("inventory.html")); // Dam bao dang nhap thanh cong
+        
+        System.out.println("[OK] Test 3 hoan thanh (Da khoi phuc trang thai)");
     }
 
-  @Test(priority = 4)
-public void TC04() throws InterruptedException {
-    System.out.println("\n[TC04] Kiem tra mo ta san pham");
-    
-    List<WebElement> descriptions = driver.findElements(By.className("inventory_item_desc"));
-    
-    assertTrue(descriptions.size() == 6);
-    for (WebElement desc : descriptions) {
-        assertTrue(desc.isDisplayed());
-        assertFalse(desc.getText().isEmpty());
+    @Test(priority = 4)
+    public void TC04() throws InterruptedException {
+        System.out.println("\n[TC04] Kiem tra mo ta san pham");
+        
+        List<WebElement> descriptions = driver.findElements(By.className("inventory_item_desc"));
+        
+        assertTrue(descriptions.size() == 6);
+        for (WebElement desc : descriptions) {
+            assertTrue(desc.isDisplayed());
+            assertFalse(desc.getText().isEmpty());
+        }
+        
+        System.out.println("[TC04] PASS");
     }
+
+    // ... (Cac test case tu 5 den 20 giu nguyen) ...
     
-    System.out.println("[TC04] PASS");
-}
-
-
     @Test(priority = 5)
     public void TC05() throws InterruptedException {
         System.out.println("\n[TC05] Kiem tra chuyen den trang gio hang");
         
         driver.findElement(By.className("shopping_cart_link")).click();
-        Thread.sleep(2000);
+        Thread.sleep(1000); // Giam thoi gian cho
         
         assertTrue(driver.getCurrentUrl().contains("cart.html"));
         
@@ -181,7 +223,7 @@ public void TC04() throws InterruptedException {
         Thread.sleep(1000);
         
         driver.findElement(By.id("continue-shopping")).click();
-        Thread.sleep(2000);
+        Thread.sleep(1000); // Giam thoi gian cho
         
         assertTrue(driver.getCurrentUrl().contains("inventory.html"));
         
@@ -194,7 +236,7 @@ public void TC04() throws InterruptedException {
         
         List<WebElement> productNames = driver.findElements(By.className("inventory_item_name"));
         productNames.get(0).click();
-        Thread.sleep(2000);
+        Thread.sleep(1000); // Giam thoi gian cho
         
         assertTrue(driver.getCurrentUrl().contains("inventory-item.html"));
         
@@ -214,7 +256,7 @@ public void TC04() throws InterruptedException {
         
         WebElement backButton = driver.findElement(By.id("back-to-products"));
         backButton.click();
-        Thread.sleep(2000);
+        Thread.sleep(1000); // Giam thoi gian cho
         
         assertTrue(driver.getCurrentUrl().contains("inventory.html"));
         
@@ -231,17 +273,17 @@ public void TC04() throws InterruptedException {
         System.out.println("[TC09] PASS");
     }
 
-@Test(priority = 10)
-public void TC10() throws InterruptedException {
-    System.out.println("\n[TC10] Kiem tra app logo");
-    
-    WebElement appLogo = driver.findElement(By.className("app_logo"));
-    
-    assertTrue(appLogo.isDisplayed());
-    assertEquals(appLogo.getText(), "Swag Labs");
-    
-    System.out.println("[TC10] PASS");
-}
+    @Test(priority = 10)
+    public void TC10() throws InterruptedException {
+        System.out.println("\n[TC10] Kiem tra app logo");
+        
+        WebElement appLogo = driver.findElement(By.className("app_logo"));
+        
+        assertTrue(appLogo.isDisplayed());
+        assertEquals(appLogo.getText(), "Swag Labs");
+        
+        System.out.println("[TC10] PASS");
+    }
 
     @Test(priority = 11)
     public void TC11() throws InterruptedException {
@@ -281,11 +323,16 @@ public void TC10() throws InterruptedException {
         assertTrue(menuButton.isDisplayed());
         
         menuButton.click();
-        Thread.sleep(1500);
+        Thread.sleep(1000); // Giam thoi gian cho
         
         WebElement menuWrap = driver.findElement(By.className("bm-menu-wrap"));
         assertTrue(menuWrap.isDisplayed());
         
+        // Click nut "X" de dong menu lai, tranh anh huong test sau
+        WebElement closeButton = driver.findElement(By.id("react-burger-cross-btn"));
+        closeButton.click();
+        Thread.sleep(500);
+
         System.out.println("[TC13] PASS");
     }
 
@@ -325,7 +372,7 @@ public void TC10() throws InterruptedException {
         assertTrue(cartIcon.isDisplayed());
         
         cartIcon.click();
-        Thread.sleep(1500);
+        Thread.sleep(1000); // Giam thoi gian cho
         
         assertTrue(driver.getCurrentUrl().contains("cart.html"));
         
@@ -362,7 +409,7 @@ public void TC10() throws InterruptedException {
         driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
         Thread.sleep(500);
         driver.findElement(By.id("add-to-cart-sauce-labs-bike-light")).click();
-        Thread.sleep(1000);
+        Thread.sleep(500); // Giam thoi gian cho
         
         WebElement cartBadge = driver.findElement(By.className("shopping_cart_badge"));
         
@@ -382,10 +429,59 @@ public void TC10() throws InterruptedException {
         System.out.println("[TC20] FAIL");
     }
     
-    @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        Nhom08.main(args);
+    // --- CAC HAM HELPER DA DUOC BO SUNG ---
+    
+    /**
+     * Ham helper de thuc hien dang nhap
+     */
+    private void login(String username, String password) throws InterruptedException {
+        // Dam bao dang o trang login
+        if (!driver.getCurrentUrl().equals(BASE_URL)) {
+            driver.get(BASE_URL);
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("login-button")));
+            Thread.sleep(200);
+        }
+        
+        WebElement userField = driver.findElement(By.id("user-name"));
+        userField.clear();
+        userField.sendKeys(username);
+        Thread.sleep(200);
+        
+        WebElement passField = driver.findElement(By.id("password"));
+        passField.clear();
+        passField.sendKeys(password);
+        Thread.sleep(200);
+        
+        driver.findElement(By.id("login-button")).click();
+        Thread.sleep(500); // Cho de trang bat dau load
+    }
+
+    /**
+     * Ham helper de dang xuat an toan
+     */
+    private void safeLogout() throws InterruptedException {
+        // Chi dang xuat neu dang o trong trang inventory
+        if (driver.getCurrentUrl().contains("inventory.html")) {
+            try {
+                WebElement menuButton = driver.findElement(By.id("react-burger-menu-btn"));
+                menuButton.click();
+                Thread.sleep(500); // Cho menu mo
+
+                WebElement logoutLink = wait.until(ExpectedConditions.elementToBeClickable(By.id("logout_sidebar_link")));
+                logoutLink.click();
+
+                wait.until(ExpectedConditions.urlToBe(BASE_URL)); // Cho de quay ve trang login
+                Thread.sleep(200);
+            } catch (Exception e) {
+                System.err.println("Loi khi logout: " + e.getMessage());
+                // Giai phap an toan: Neu loi thi cu dieu huong ve trang chu
+                driver.get(BASE_URL);
+                Thread.sleep(500);
+            }
+        } else {
+             // Neu khong o trang inventory (vi du: trang cart), quay ve trang chu
+             driver.get(BASE_URL);
+             Thread.sleep(500);
+        }
     }
 }

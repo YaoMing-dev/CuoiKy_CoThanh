@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.nhom08.Nhom08NGTest" time="78.427" tests="21" errors="0" skipped="0" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.nhom08.Nhom08NGTest" time="37.85" tests="20" errors="0" skipped="0" failures="4">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="webdriver.chrome.driver" value="C:\Users\miyam\.cache\selenium\chromedriver\win64\142.0.7444.61\chromedriver.exe"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.x\bin"/>
-    <property name="sun.java.command" value="C:\Users\miyam\AppData\Local\Temp\surefire14329000646170127662\surefirebooter-20251110205735657_3.jar C:\Users\miyam\AppData\Local\Temp\surefire14329000646170127662 2025-11-10T20-57-35_505-jvmRun1 surefire-20251110205735657_1tmp surefire_0-20251110205735657_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\miyam\AppData\Local\Temp\surefire14392847974744472071\surefirebooter-20251110211205670_3.jar C:\Users\miyam\AppData\Local\Temp\surefire14392847974744472071 2025-11-10T21-12-05_491-jvmRun1 surefire-20251110211205670_1tmp surefire_0-20251110211205670_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="com.mycompany.nhom08.Nhom08NGTest"/>
     <property name="surefire.test.class.path" value="C:\Users\miyam\OneDrive\Documents\NetBeansProjects\Nhom08\target\test-classes;C:\Users\miyam\OneDrive\Documents\NetBeansProjects\Nhom08\target\classes;C:\Users\miyam\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\miyam\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\miyam\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\miyam\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\miyam\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\miyam\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\miyam\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\miyam\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\miyam\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\miyam\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\miyam\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\miyam\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\miyam\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\miyam\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\miyam\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\miyam\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\miyam\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\miyam\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\miyam\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\miyam\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\miyam\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\miyam\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\miyam\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\miyam\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\miyam\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\miyam\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\miyam\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\miyam\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\miyam\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\miyam\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\miyam\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\miyam\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\miyam\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\miyam\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\miyam\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\miyam\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\miyam\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\miyam\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\miyam\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\miyam\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\miyam\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\miyam\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\miyam\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.2\webdrivermanager-5.6.2.jar;C:\Users\miyam\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\miyam\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\miyam\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\miyam\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\miyam\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\miyam\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\miyam\.m2\repository\commons-io\commons-io\2.13.0\commons-io-2.13.0.jar;C:\Users\miyam\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\miyam\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\miyam\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\miyam\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\miyam\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\miyam\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\miyam\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\miyam\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\miyam\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\miyam\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\miyam\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\miyam\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\miyam\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\miyam\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\miyam\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\miyam\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\miyam\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\miyam\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\miyam\.m2\repository\org\apache\commons\commons-csv\1.10.0\commons-csv-1.10.0.jar;"/>
@@ -33,7 +33,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\miyam\AppData\Local\Temp\surefire14329000646170127662\surefirebooter-20251110205735657_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\miyam\AppData\Local\Temp\surefire14392847974744472071\surefirebooter-20251110211205670_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.15+6"/>
@@ -63,7 +63,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testMain" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.003">
+  <testcase name="test01_Login_Success" classname="com.mycompany.nhom08.Nhom08NGTest" time="2.031">
     <system-out><![CDATA[Da xoa ket qua cu, san sang cho test moi
 ============================================================
 BAT DAU CHAY 20 TEST CASES - SAUCEDEMO.COM
@@ -72,149 +72,144 @@ BAT DAU CHAY 20 TEST CASES - SAUCEDEMO.COM
 
 [SETUP] Dang nhap 1 lan duy nhat...
 [SETUP] Da dang nhap thanh cong - Bat dau chay test
-main
-Hello World!
-De chay test Selenium, hay chay file testng.xml
-Ket qua se duoc xuat ra file: test-results.csv
+
+[TEST 1] Dang test dang nhap thanh cong...
+[OK] Test 1 hoan thanh (Da dang nhap lai)
 ]]></system-out>
     <system-err><![CDATA[SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-thg 11 10, 2025 8:57:37 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+thg 11 10, 2025 9:12:07 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 142
-thg 11 10, 2025 8:57:37 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+thg 11 10, 2025 9:12:07 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 142.0.7444.60. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="TC01" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.025">
-    <system-out><![CDATA[  -> Da luu ket qua: testMain
->> testMain: PASS (2085ms)
+  <testcase name="test02_Login_LockedUser" classname="com.mycompany.nhom08.Nhom08NGTest" time="3.045">
+    <system-out><![CDATA[  -> Da luu ket qua: test01_Login_Success
+>> test01_Login_Success: PASS (2755ms)
 
-[TC01] Kiem tra tieu de trang
-[TC01] PASS
+[TEST 2] Dang test locked user...
+[TEST 2] Dang log in lai (standard_user) de chuan bi cho test tiep theo...
+[OK] Test 2 hoan thanh (Da khoi phuc trang thai)
 ]]></system-out>
   </testcase>
-  <testcase name="TC02" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.042">
-    <system-out><![CDATA[  -> Da luu ket qua: TC01
->> TC01: PASS (2166ms)
+  <testcase name="test03_Login_InvalidPassword" classname="com.mycompany.nhom08.Nhom08NGTest" time="3.023">
+    <system-out><![CDATA[  -> Da luu ket qua: test02_Login_LockedUser
+>> test02_Login_LockedUser: PASS (3660ms)
 
-[TC02] Kiem tra inventory container
-[TC02] PASS
+[TEST 3] Dang test mat khau sai...
+[TEST 3] Dang log in lai (standard_user) de chuan bi cho test tiep theo...
+[OK] Test 3 hoan thanh (Da khoi phuc trang thai)
 ]]></system-out>
   </testcase>
-  <testcase name="TC03" classname="com.mycompany.nhom08.Nhom08NGTest" time="1.085">
-    <system-out><![CDATA[  -> Da luu ket qua: TC02
->> TC02: PASS (2126ms)
-
-[TC03] Kiem tra them san pham vao gio
-[TC03] PASS
-]]></system-out>
-  </testcase>
-  <testcase name="TC04" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.09">
-    <system-out><![CDATA[  -> Da luu ket qua: TC03
->> TC03: PASS (3193ms)
+  <testcase name="TC04" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.095">
+    <system-out><![CDATA[  -> Da luu ket qua: test03_Login_InvalidPassword
+>> test03_Login_InvalidPassword: PASS (3623ms)
 
 [TC04] Kiem tra mo ta san pham
 [TC04] PASS
 ]]></system-out>
   </testcase>
-  <testcase name="TC05" classname="com.mycompany.nhom08.Nhom08NGTest" time="2.074">
+  <testcase name="TC05" classname="com.mycompany.nhom08.Nhom08NGTest" time="1.089">
     <system-out><![CDATA[  -> Da luu ket qua: TC04
->> TC04: PASS (2160ms)
+>> TC04: PASS (711ms)
 
 [TC05] Kiem tra chuyen den trang gio hang
 [TC05] PASS
 ]]></system-out>
   </testcase>
-  <testcase name="TC06" classname="com.mycompany.nhom08.Nhom08NGTest" time="3.108">
+  <testcase name="TC06" classname="com.mycompany.nhom08.Nhom08NGTest" time="2.121">
     <system-out><![CDATA[  -> Da luu ket qua: TC05
->> TC05: PASS (4196ms)
+>> TC05: PASS (1705ms)
+[WARNING] Phat hien trang thai da bi log-out. Dang thu vao lai trang inventory...
 
 [TC06] Kiem tra quay ve trang san pham
 [TC06] PASS
 ]]></system-out>
   </testcase>
-  <testcase name="TC07" classname="com.mycompany.nhom08.Nhom08NGTest" time="2.093">
+  <testcase name="TC07" classname="com.mycompany.nhom08.Nhom08NGTest" time="1.1">
     <system-out><![CDATA[  -> Da luu ket qua: TC06
->> TC06: PASS (5194ms)
+>> TC06: PASS (3202ms)
 
 [TC07] Kiem tra xem chi tiet san pham
 [TC07] PASS
 ]]></system-out>
   </testcase>
-  <testcase name="TC08" classname="com.mycompany.nhom08.Nhom08NGTest" time="3.632">
+  <testcase name="TC08" classname="com.mycompany.nhom08.Nhom08NGTest" time="2.617">
     <system-out><![CDATA[  -> Da luu ket qua: TC07
->> TC07: PASS (4245ms)
+>> TC07: PASS (1732ms)
+[WARNING] Phat hien trang thai da bi log-out. Dang thu vao lai trang inventory...
 
 [TC08] Kiem tra nut back tu chi tiet
 [TC08] PASS
 ]]></system-out>
   </testcase>
-  <testcase name="TC09" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.011">
+  <testcase name="TC09" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.04">
     <system-out><![CDATA[  -> Da luu ket qua: TC08
->> TC08: PASS (5722ms)
+>> TC08: PASS (3707ms)
 
 [TC09] Kiem tra so luong san pham
 [TC09] PASS
 ]]></system-out>
   </testcase>
-  <testcase name="TC10" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.023">
+  <testcase name="TC10" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.017">
     <system-out><![CDATA[  -> Da luu ket qua: TC09
->> TC09: PASS (2188ms)
+>> TC09: PASS (649ms)
 
 [TC10] Kiem tra app logo
 [TC10] PASS
 ]]></system-out>
   </testcase>
-  <testcase name="TC11" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.07">
+  <testcase name="TC11" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.056">
     <system-out><![CDATA[  -> Da luu ket qua: TC10
->> TC10: PASS (2104ms)
+>> TC10: PASS (630ms)
 
 [TC11] Kiem tra ten san pham hien thi
 [TC11] PASS
 ]]></system-out>
   </testcase>
-  <testcase name="TC12" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.071">
+  <testcase name="TC12" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.079">
     <system-out><![CDATA[  -> Da luu ket qua: TC11
->> TC11: PASS (2175ms)
+>> TC11: PASS (660ms)
 
 [TC12] Kiem tra gia san pham hien thi
 [TC12] PASS
 ]]></system-out>
   </testcase>
-  <testcase name="TC13" classname="com.mycompany.nhom08.Nhom08NGTest" time="1.64">
+  <testcase name="TC13" classname="com.mycompany.nhom08.Nhom08NGTest" time="1.6">
     <system-out><![CDATA[  -> Da luu ket qua: TC12
->> TC12: PASS (2145ms)
+>> TC12: PASS (710ms)
 
 [TC13] Kiem tra hamburger menu
 [TC13] PASS
 ]]></system-out>
   </testcase>
-  <testcase name="TC14" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.025">
+  <testcase name="TC14" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.027">
     <system-out><![CDATA[  -> Da luu ket qua: TC13
->> TC13: PASS (3719ms)
+>> TC13: PASS (2203ms)
 
 [TC14] Kiem tra footer social links
 [TC14] PASS
 ]]></system-out>
   </testcase>
-  <testcase name="TC15" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.076">
+  <testcase name="TC15" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.064">
     <system-out><![CDATA[  -> Da luu ket qua: TC14
->> TC14: PASS (2115ms)
+>> TC14: PASS (633ms)
 
 [TC15] Kiem tra hinh anh san pham
 [TC15] PASS
 ]]></system-out>
   </testcase>
-  <testcase name="TC16" classname="com.mycompany.nhom08.Nhom08NGTest" time="1.596">
+  <testcase name="TC16" classname="com.mycompany.nhom08.Nhom08NGTest" time="1.064">
     <system-out><![CDATA[  -> Da luu ket qua: TC15
->> TC15: PASS (2154ms)
+>> TC15: PASS (673ms)
 
 [TC16] Kiem tra shopping cart icon
 [TC16] PASS
 ]]></system-out>
   </testcase>
-  <testcase name="TC17" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.019">
+  <testcase name="TC17" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.013">
     <failure message="expected [10] but found [6]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [10] but found [6]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -223,7 +218,7 @@ WARNING: Unable to find version of CDP to use for 142.0.7444.60. You may need to
 	at org.testng.Assert.assertEquals(Assert.java:1419)
 	at org.testng.Assert.assertEquals(Assert.java:1383)
 	at org.testng.Assert.assertEquals(Assert.java:1429)
-	at com.mycompany.nhom08.Nhom08NGTest.TC17(Nhom08NGTest.java:341)
+	at com.mycompany.nhom08.Nhom08NGTest.TC17(Nhom08NGTest.java:388)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -259,12 +254,13 @@ WARNING: Unable to find version of CDP to use for 142.0.7444.60. You may need to
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
     <system-out><![CDATA[  -> Da luu ket qua: TC16
->> TC16: PASS (3683ms)
+>> TC16: PASS (1669ms)
+[WARNING] Phat hien trang thai da bi log-out. Dang thu vao lai trang inventory...
 
 [TC17] Kiem tra so luong san pham sai - FAIL
 ]]></system-out>
   </testcase>
-  <testcase name="TC18" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.025">
+  <testcase name="TC18" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.017">
     <failure message="expected [$99.99] but found [$29.99]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [$99.99] but found [$29.99]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -272,7 +268,7 @@ WARNING: Unable to find version of CDP to use for 142.0.7444.60. You may need to
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.mycompany.nhom08.Nhom08NGTest.TC18(Nhom08NGTest.java:353)
+	at com.mycompany.nhom08.Nhom08NGTest.TC18(Nhom08NGTest.java:400)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -308,39 +304,20 @@ WARNING: Unable to find version of CDP to use for 142.0.7444.60. You may need to
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
     <system-out><![CDATA[  -> Da luu ket qua: TC17
->> TC17: FAIL (2122ms)
+>> TC17: FAIL (1097ms)
 
 [TC18] Kiem tra gia san pham dau tien - FAIL
 ]]></system-out>
   </testcase>
-  <testcase name="TC19" classname="com.mycompany.nhom08.Nhom08NGTest" time="10.038">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#add\-to\-cart\-sauce\-labs\-backpack&quot;}&#10;  (Session info: chrome=142.0.7444.60)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.15&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [798eba078a864888bee7e45e0e2d828f, findElement {using=id, value=add-to-cart-sauce-labs-backpack}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57607}, goog:processID: 9152, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57607/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 798eba078a864888bee7e45e0e2d828f" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-cart\-sauce\-labs\-backpack"}
-  (Session info: chrome=142.0.7444.60)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [798eba078a864888bee7e45e0e2d828f, findElement {using=id, value=add-to-cart-sauce-labs-backpack}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57607}, goog:processID: 9152, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57607/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 798eba078a864888bee7e45e0e2d828f
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at com.mycompany.nhom08.Nhom08NGTest.TC19(Nhom08NGTest.java:362)
+  <testcase name="TC19" classname="com.mycompany.nhom08.Nhom08NGTest" time="1.237">
+    <failure message="expected [5] but found [2]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [5] but found [2]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.mycompany.nhom08.Nhom08NGTest.TC19(Nhom08NGTest.java:416)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -376,12 +353,12 @@ Session ID: 798eba078a864888bee7e45e0e2d828f
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
     <system-out><![CDATA[  -> Da luu ket qua: TC18
->> TC18: FAIL (2145ms)
+>> TC18: FAIL (741ms)
 
 [TC19] Kiem tra badge gio hang sai - FAIL
 ]]></system-out>
   </testcase>
-  <testcase name="TC20" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.01">
+  <testcase name="TC20" classname="com.mycompany.nhom08.Nhom08NGTest" time="0.024">
     <failure message="expected [All Products] but found [Products]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [All Products] but found [Products]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -389,7 +366,7 @@ Session ID: 798eba078a864888bee7e45e0e2d828f
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.mycompany.nhom08.Nhom08NGTest.TC20(Nhom08NGTest.java:380)
+	at com.mycompany.nhom08.Nhom08NGTest.TC20(Nhom08NGTest.java:427)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -425,7 +402,7 @@ Session ID: 798eba078a864888bee7e45e0e2d828f
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
     <system-out><![CDATA[  -> Da luu ket qua: TC19
->> TC19: FAIL (12135ms)
+>> TC19: FAIL (1894ms)
 
 [TC20] Kiem tra tieu de trang sai - FAIL
 ]]></system-out>

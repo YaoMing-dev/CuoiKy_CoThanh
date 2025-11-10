@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">21 methods, 4 failed,   17 passed</span>
+                    <span class="method-stats">20 methods, 4 failed,   16 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -130,21 +130,6 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content passed suite-Surefire_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="TC01">TC01</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="TC02">TC02</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="TC03">TC03</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="TC04">TC04</a> <!-- method navigator-link -->
@@ -212,7 +197,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="testMain">testMain</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="test01_Login_Success">test01_Login_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="test02_Login_LockedUser">test02_Login_LockedUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.mycompany.nhom08.Nhom08NGTest" class="method navigator-link" hash-for-method="test03_Login_InvalidPassword">test03_Login_InvalidPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -239,7 +234,7 @@
                   </a> <!-- TC17 -->
                   <span class="method-name">TC17</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [10] but found [6]
-	at com.mycompany.nhom08.Nhom08NGTest.TC17(Nhom08NGTest.java:341)
+	at com.mycompany.nhom08.Nhom08NGTest.TC17(Nhom08NGTest.java:388)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 39 stack frames
 </div> <!-- stack-trace -->
@@ -251,7 +246,7 @@
                   </a> <!-- TC18 -->
                   <span class="method-name">TC18</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [$99.99] but found [$29.99]
-	at com.mycompany.nhom08.Nhom08NGTest.TC18(Nhom08NGTest.java:353)
+	at com.mycompany.nhom08.Nhom08NGTest.TC18(Nhom08NGTest.java:400)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 38 stack frames
 </div> <!-- stack-trace -->
@@ -262,29 +257,10 @@
                   <a name="TC19">
                   </a> <!-- TC19 -->
                   <span class="method-name">TC19</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#add\-to\-cart\-sauce\-labs\-backpack&quot;}
-  (Session info: chrome=142.0.7444.60)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.15&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [798eba078a864888bee7e45e0e2d828f, findElement {using=id, value=add-to-cart-sauce-labs-backpack}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Users\miyam\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57607}, goog:processID: 9152, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57607/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 798eba078a864888bee7e45e0e2d828f
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at com.mycompany.nhom08.Nhom08NGTest.TC19(Nhom08NGTest.java:362)
+                  <div class="stack-trace">java.lang.AssertionError: expected [5] but found [2]
+	at com.mycompany.nhom08.Nhom08NGTest.TC19(Nhom08NGTest.java:416)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames
+... Removed 38 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -294,7 +270,7 @@ Session ID: 798eba078a864888bee7e45e0e2d828f
                   </a> <!-- TC20 -->
                   <span class="method-name">TC20</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [All Products] but found [Products]
-	at com.mycompany.nhom08.Nhom08NGTest.TC20(Nhom08NGTest.java:380)
+	at com.mycompany.nhom08.Nhom08NGTest.TC20(Nhom08NGTest.java:427)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 38 stack frames
 </div> <!-- stack-trace -->
@@ -308,27 +284,6 @@ Session ID: 798eba078a864888bee7e45e0e2d828f
               <span class="class-name">com.mycompany.nhom08.Nhom08NGTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC01">
-                  </a> <!-- TC01 -->
-                  <span class="method-name">TC01</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC02">
-                  </a> <!-- TC02 -->
-                  <span class="method-name">TC02</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC03">
-                  </a> <!-- TC03 -->
-                  <span class="method-name">TC03</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="TC04">
@@ -422,9 +377,23 @@ Session ID: 798eba078a864888bee7e45e0e2d828f
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testMain">
-                  </a> <!-- testMain -->
-                  <span class="method-name">testMain</span>
+                  <a name="test01_Login_Success">
+                  </a> <!-- test01_Login_Success -->
+                  <span class="method-name">test01_Login_Success</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test02_Login_LockedUser">
+                  </a> <!-- test02_Login_LockedUser -->
+                  <span class="method-name">test02_Login_LockedUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test03_Login_InvalidPassword">
+                  </a> <!-- test03_Login_InvalidPassword -->
+                  <span class="method-name">test03_Login_InvalidPassword</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -480,96 +449,92 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(21);
+data.addRows(20);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC19')
+data.setCell(0, 1, 'test02_Login_LockedUser')
 data.setCell(0, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(0, 3, 10037);
+data.setCell(0, 3, 3044);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC08')
+data.setCell(1, 1, 'test03_Login_InvalidPassword')
 data.setCell(1, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(1, 3, 3631);
+data.setCell(1, 3, 3023);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC06')
+data.setCell(2, 1, 'TC08')
 data.setCell(2, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(2, 3, 3108);
+data.setCell(2, 3, 2617);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC07')
+data.setCell(3, 1, 'TC06')
 data.setCell(3, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(3, 3, 2094);
+data.setCell(3, 3, 2122);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC05')
+data.setCell(4, 1, 'test01_Login_Success')
 data.setCell(4, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(4, 3, 2075);
+data.setCell(4, 3, 2029);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'TC13')
 data.setCell(5, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(5, 3, 1640);
+data.setCell(5, 3, 1601);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC16')
+data.setCell(6, 1, 'TC19')
 data.setCell(6, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(6, 3, 1597);
+data.setCell(6, 3, 1237);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC03')
+data.setCell(7, 1, 'TC07')
 data.setCell(7, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(7, 3, 1085);
+data.setCell(7, 3, 1100);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC04')
+data.setCell(8, 1, 'TC05')
 data.setCell(8, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(8, 3, 89);
+data.setCell(8, 3, 1089);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TC15')
+data.setCell(9, 1, 'TC16')
 data.setCell(9, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(9, 3, 77);
+data.setCell(9, 3, 1066);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TC12')
+data.setCell(10, 1, 'TC04')
 data.setCell(10, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(10, 3, 70);
+data.setCell(10, 3, 94);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'TC11')
+data.setCell(11, 1, 'TC12')
 data.setCell(11, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(11, 3, 70);
+data.setCell(11, 3, 80);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TC02')
+data.setCell(12, 1, 'TC15')
 data.setCell(12, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(12, 3, 42);
+data.setCell(12, 3, 62);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'TC01')
+data.setCell(13, 1, 'TC11')
 data.setCell(13, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(13, 3, 26);
+data.setCell(13, 3, 57);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'TC14')
+data.setCell(14, 1, 'TC09')
 data.setCell(14, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(14, 3, 25);
+data.setCell(14, 3, 40);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'TC18')
+data.setCell(15, 1, 'TC14')
 data.setCell(15, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(15, 3, 24);
+data.setCell(15, 3, 27);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'TC10')
+data.setCell(16, 1, 'TC20')
 data.setCell(16, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(16, 3, 22);
+data.setCell(16, 3, 24);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'TC17')
+data.setCell(17, 1, 'TC18')
 data.setCell(17, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(17, 3, 18);
+data.setCell(17, 3, 16);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'TC09')
+data.setCell(18, 1, 'TC10')
 data.setCell(18, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(18, 3, 11);
+data.setCell(18, 3, 15);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'TC20')
+data.setCell(19, 1, 'TC17')
 data.setCell(19, 2, 'com.mycompany.nhom08.Nhom08NGTest')
 data.setCell(19, 3, 11);
-data.setCell(20, 0, 20)
-data.setCell(20, 1, 'testMain')
-data.setCell(20, 2, 'com.mycompany.nhom08.Nhom08NGTest')
-data.setCell(20, 3, 2);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -602,267 +567,255 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">8089 ms</span>
+                <span class="method-start">3985 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testMain</span>
-                <span class="method-start">10170 ms</span>
+                <span class="method-name">test01_Login_Success</span>
+                <span class="method-start">4709 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=testMain status=SUCCESS method=Nhom08NGTest.testMain()[pri:0, instance:com.mycompan...)</span>
-                <span class="method-start">10173 ms</span>
+                <span class="method-name">tearDownMethod([TestResult name=test01_Login_Success status=SUCCESS method=Nhom08NGTest.test01_Login_Success()[pri:...)</span>
+                <span class="method-start">6740 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">10178 ms</span>
+                <span class="method-start">6743 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TC01</span>
-                <span class="method-start">12318 ms</span>
+                <span class="method-name">test02_Login_LockedUser</span>
+                <span class="method-start">7358 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">10403 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=test02_Login_LockedUser status=SUCCESS method=Nhom08NGTest.test02_Login_LockedUser(...)</span>
+                <span class="method-start">10403 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test03_Login_InvalidPassword</span>
+                <span class="method-start">11003 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=TC01 status=SUCCESS method=Nhom08NGTest.TC01()[pri:1, instance:com.mycompany.nhom08...)</span>
-                <span class="method-start">12344 ms</span>
+                <span class="method-name">tearDownMethod([TestResult name=test03_Login_InvalidPassword status=SUCCESS method=Nhom08NGTest.test03_Login_Invali...)</span>
+                <span class="method-start">14026 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">12345 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC02</span>
-                <span class="method-start">14429 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=TC02 status=SUCCESS method=Nhom08NGTest.TC02()[pri:2, instance:com.mycompany.nhom08...)</span>
-                <span class="method-start">14471 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod</span>
-                <span class="method-start">14472 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC03</span>
-                <span class="method-start">16580 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=TC03 status=SUCCESS method=Nhom08NGTest.TC03()[pri:3, instance:com.mycompany.nhom08...)</span>
-                <span class="method-start">17665 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod</span>
-                <span class="method-start">17666 ms</span>
+                <span class="method-start">14027 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC04</span>
-                <span class="method-start">19736 ms</span>
+                <span class="method-start">14643 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=TC04 status=SUCCESS method=Nhom08NGTest.TC04()[pri:4, instance:com.mycompany.nhom08...)</span>
-                <span class="method-start">19826 ms</span>
+                <span class="method-start">14737 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">19826 ms</span>
+                <span class="method-start">14740 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC05</span>
-                <span class="method-start">21946 ms</span>
+                <span class="method-start">15356 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=TC05 status=SUCCESS method=Nhom08NGTest.TC05()[pri:5, instance:com.mycompany.nhom08...)</span>
-                <span class="method-start">24022 ms</span>
+                <span class="method-start">16445 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">24022 ms</span>
+                <span class="method-start">16447 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC06</span>
-                <span class="method-start">26107 ms</span>
+                <span class="method-start">17527 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=TC06 status=SUCCESS method=Nhom08NGTest.TC06()[pri:6, instance:com.mycompany.nhom08...)</span>
-                <span class="method-start">29215 ms</span>
+                <span class="method-start">19649 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">29216 ms</span>
+                <span class="method-start">19649 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC07</span>
-                <span class="method-start">31367 ms</span>
+                <span class="method-start">20280 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=TC07 status=SUCCESS method=Nhom08NGTest.TC07()[pri:7, instance:com.mycompany.nhom08...)</span>
-                <span class="method-start">33461 ms</span>
+                <span class="method-start">21381 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">33462 ms</span>
+                <span class="method-start">21381 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC08</span>
-                <span class="method-start">35552 ms</span>
+                <span class="method-start">22470 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=TC08 status=SUCCESS method=Nhom08NGTest.TC08()[pri:8, instance:com.mycompany.nhom08...)</span>
-                <span class="method-start">39184 ms</span>
+                <span class="method-start">25087 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">39184 ms</span>
+                <span class="method-start">25089 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC09</span>
-                <span class="method-start">41362 ms</span>
+                <span class="method-start">25697 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=TC09 status=SUCCESS method=Nhom08NGTest.TC09()[pri:9, instance:com.mycompany.nhom08...)</span>
-                <span class="method-start">41373 ms</span>
+                <span class="method-start">25737 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">41374 ms</span>
+                <span class="method-start">25738 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC10</span>
-                <span class="method-start">43454 ms</span>
+                <span class="method-start">26351 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=TC10 status=SUCCESS method=Nhom08NGTest.TC10()[pri:10, instance:com.mycompany.nhom0...)</span>
-                <span class="method-start">43476 ms</span>
+                <span class="method-start">26368 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">43478 ms</span>
+                <span class="method-start">26368 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC11</span>
-                <span class="method-start">45582 ms</span>
+                <span class="method-start">26971 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=TC11 status=SUCCESS method=Nhom08NGTest.TC11()[pri:11, instance:com.mycompany.nhom0...)</span>
-                <span class="method-start">45652 ms</span>
+                <span class="method-start">27028 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">45653 ms</span>
+                <span class="method-start">27029 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC12</span>
-                <span class="method-start">47727 ms</span>
+                <span class="method-start">27658 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=TC12 status=SUCCESS method=Nhom08NGTest.TC12()[pri:12, instance:com.mycompany.nhom0...)</span>
-                <span class="method-start">47798 ms</span>
+                <span class="method-start">27739 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">47798 ms</span>
+                <span class="method-start">27740 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC13</span>
-                <span class="method-start">49877 ms</span>
+                <span class="method-start">28342 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=TC13 status=SUCCESS method=Nhom08NGTest.TC13()[pri:13, instance:com.mycompany.nhom0...)</span>
-                <span class="method-start">51517 ms</span>
+                <span class="method-start">29943 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">51518 ms</span>
+                <span class="method-start">29944 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC14</span>
-                <span class="method-start">53608 ms</span>
+                <span class="method-start">30549 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=TC14 status=SUCCESS method=Nhom08NGTest.TC14()[pri:14, instance:com.mycompany.nhom0...)</span>
-                <span class="method-start">53633 ms</span>
+                <span class="method-start">30576 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">53634 ms</span>
+                <span class="method-start">30577 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC15</span>
-                <span class="method-start">55710 ms</span>
+                <span class="method-start">31186 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=TC15 status=SUCCESS method=Nhom08NGTest.TC15()[pri:15, instance:com.mycompany.nhom0...)</span>
-                <span class="method-start">55787 ms</span>
+                <span class="method-start">31250 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">55788 ms</span>
+                <span class="method-start">31250 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC16</span>
-                <span class="method-start">57874 ms</span>
+                <span class="method-start">31853 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=TC16 status=SUCCESS method=Nhom08NGTest.TC16()[pri:16, instance:com.mycompany.nhom0...)</span>
-                <span class="method-start">59471 ms</span>
+                <span class="method-start">32919 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">59471 ms</span>
+                <span class="method-start">32920 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC17</span>
-                <span class="method-start">61574 ms</span>
+                <span class="method-start">34004 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=TC17 status=FAILURE method=Nhom08NGTest.TC17()[pri:17, instance:com.mycompany.nhom0...)</span>
-                <span class="method-start">61593 ms</span>
+                <span class="method-start">34017 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">61594 ms</span>
+                <span class="method-start">34018 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC18</span>
-                <span class="method-start">63714 ms</span>
+                <span class="method-start">34742 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=TC18 status=FAILURE method=Nhom08NGTest.TC18()[pri:18, instance:com.mycompany.nhom0...)</span>
-                <span class="method-start">63739 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">63740 ms</span>
+                <span class="method-start">34759 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=TC18 status=FAILURE method=Nhom08NGTest.TC18()[pri:18, instance:com.mycompany.nhom0...)</span>
+                <span class="method-start">34759 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC19</span>
-                <span class="method-start">65837 ms</span>
+                <span class="method-start">35416 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=TC19 status=FAILURE method=Nhom08NGTest.TC19()[pri:19, instance:com.mycompany.nhom0...)</span>
-                <span class="method-start">75875 ms</span>
+                <span class="method-start">36653 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod</span>
-                <span class="method-start">75875 ms</span>
+                <span class="method-start">36654 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC20</span>
-                <span class="method-start">77947 ms</span>
+                <span class="method-start">37277 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=TC20 status=FAILURE method=Nhom08NGTest.TC20()[pri:20, instance:com.mycompany.nhom0...)</span>
-                <span class="method-start">77958 ms</span>
+                <span class="method-start">37302 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">finish</span>
-                <span class="method-start">77975 ms</span>
+                <span class="method-start">37317 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
