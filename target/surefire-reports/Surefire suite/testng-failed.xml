@@ -5,11 +5,14 @@
     <classes>
       <class name="com.mycompany.nhom08.Nhom08NGTest">
         <methods>
+          <include name="TC20"/>
           <include name="setupSuite"/>
-          <include name="test07_SortProductsByPrice"/>
           <include name="tearDownMethod"/>
           <include name="finish"/>
+          <include name="TC19"/>
           <include name="setUpMethod"/>
+          <include name="TC18"/>
+          <include name="TC17"/>
         </methods>
       </class> <!-- com.mycompany.nhom08.Nhom08NGTest -->
     </classes>
