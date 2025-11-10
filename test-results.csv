@@ -1,0 +1,12 @@
+Test Case,Status,Time,Duration (ms)
+testMain,PASS,10/11/2025 18:18:43,1519
+test01_Login_Success,PASS,10/11/2025 18:19:03,20043
+test02_Login_LockedUser,PASS,10/11/2025 18:19:29,25310
+test03_Login_InvalidPassword,PASS,10/11/2025 18:19:54,25038
+test04_AddProductToCart,PASS,10/11/2025 18:19:57,3126
+test05_RemoveProductFromCart,PASS,10/11/2025 18:20:10,13624
+test06_SortProductsByName,FAIL,10/11/2025 18:20:24,13041
+test07_SortProductsByPrice,FAIL,10/11/2025 18:20:35,11881
+test08_VerifyProductCount,PASS,10/11/2025 18:20:37,1534
+test09_ViewProductDetails,PASS,10/11/2025 18:20:42,4677
+test10_NavigateToCart,PASS,10/11/2025 18:20:45,3635
