@@ -1,3 +1,6 @@
+/*
+ * File nay bay gio chua 20 test case Selenium cho saucedemo.com
+ */
 package com.mycompany.nhom08;
 
 import static org.testng.Assert.*;
@@ -18,24 +21,29 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Nhom08NGTest {
+/**
+ *
+ * @author miyam
+ 
+ */
+public class LoginNGTest { 
     
     private WebDriver driver;
     private WebDriverWait wait;
     private static final String BASE_URL = "https://www.saucedemo.com/";
     private long startTime;
     
-    // --- BIEN DA DUOC BO SUNG ---
+
     private static final String VALID_USERNAME = "standard_user";
-    private static final String LOCKED_USERNAME = "locked_out_user"; // <-- DA THEM
+    private static final String LOCKED_USERNAME = "locked_out_user";
     private static final String VALID_PASSWORD = "secret_sauce";
     
-    public Nhom08NGTest() {
+    public LoginNGTest() { 
     }
     
     @BeforeSuite
     public void setupSuite() throws InterruptedException {
-        Nhom08.CSVReporter.clear();
+        Login.CSVReporter.clear(); 
         System.out.println("=".repeat(60));
         System.out.println("BAT DAU CHAY 20 TEST CASES - SAUCEDEMO.COM");
         System.out.println("(16 PASS + 4 FAIL = 20% FAIL RATE)");
@@ -45,10 +53,15 @@ public class Nhom08NGTest {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
         options.addArguments("--disable-blink-features=AutomationControlled");
-      
+        options.addArguments("--disable-save-password-bubble");
+        options.addArguments("--disable-features=PasswordManager,PasswordCheck,PasswordLeakDetection");
         options.addArguments("--incognito");
       
-        
+        Map<String, Object> prefs = new HashMap<>();
+        prefs.put("credentials_enable_service", false);
+        prefs.put("profile.password_manager_enabled", false);
+        options.setExperimentalOption("prefs", prefs);
+        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
         
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -57,9 +70,9 @@ public class Nhom08NGTest {
         
         System.out.println("\n[SETUP] Dang nhap 1 lan duy nhat...");
         driver.get(BASE_URL);
-        Thread.sleep(1000); // Giam thoi gian cho
+        Thread.sleep(1000); 
         
-        // Su dung ham helper de dang nhap
+        
         login(VALID_USERNAME, VALID_PASSWORD);
         
         wait.until(ExpectedConditions.urlContains("inventory.html"));
@@ -70,20 +83,20 @@ public class Nhom08NGTest {
     public void setUpMethod() throws Exception {
         startTime = System.currentTimeMillis();
         
-        // Logic nay van dung de dam bao cac test 4-20 luon bat dau o trang inventory
+       
         if (!driver.getCurrentUrl().contains("inventory.html")) {
             System.out.println("[WARNING] Phat hien trang thai da bi log-out. Dang thu vao lai trang inventory...");
             driver.get(BASE_URL + "inventory.html");
             Thread.sleep(1000);
             
-            // Neu vao lai ma van bi day ve trang login thi tien hanh login lai
+          
             if (!driver.getCurrentUrl().contains("inventory.html")) {
                  System.out.println("[RECOVERY] Bi day ve trang login. Dang dang nhap lai...");
                  login(VALID_USERNAME, VALID_PASSWORD);
                  wait.until(ExpectedConditions.urlContains("inventory.html"));
             }
         } else {
-             // Neu da o trang inventory, chi can refresh de reset state (vi du: xoa item khoi cart)
+            
             driver.navigate().refresh();
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("react-burger-menu-btn")));
             Thread.sleep(500);
@@ -96,14 +109,14 @@ public class Nhom08NGTest {
         String testName = result.getMethod().getMethodName();
         String status = result.isSuccess() ? "PASS" : "FAIL";
         
-        Nhom08.CSVReporter.addResult(testName, status, duration);
+        Login.CSVReporter.addResult(testName, status, duration); // Giả định Nhom08.CSVReporter tồn tại
         System.out.println(">> " + testName + ": " + status + " (" + duration + "ms)");
     }
     
     @AfterSuite
     public void finish() {
         System.out.println("=".repeat(60));
-        Nhom08.CSVReporter.writeToCSV();
+        Login.CSVReporter.writeToCSV(); // Giả định Nhom08.CSVReporter tồn tại
         System.out.println("=".repeat(60));
         
         if (driver != null) {
@@ -112,65 +125,65 @@ public class Nhom08NGTest {
         }
     }
     
-     // --- TEST 1 (DA SUA) ---
+
      @Test(priority = 1)
-    public void test01_Login_Success() throws InterruptedException {
+    public void TC01() throws InterruptedException {
         System.out.println("\n[TEST 1] Dang test dang nhap thanh cong...");
         
-        // 1. Dang xuat khoi phien lam viec cua @BeforeSuite
+      
         safeLogout();
         
-        // 2. Thuc hien test dang nhap
+       
         login(VALID_USERNAME, VALID_PASSWORD);
         
-        // 3. Kiem tra ket qua
+       
         assertTrue(driver.getCurrentUrl().contains("inventory.html"));
         WebElement title = wait.until(ExpectedConditions.presenceOfElementLocated(By.className("title")));
         assertEquals(title.getText(), "Products");
         
-        // 4. KHONG dang xuat, de giu trang thai cho test tiep theo
+       
         System.out.println("[OK] Test 1 hoan thanh (Da dang nhap lai)");
     }
 
-    // --- TEST 2 (DA SUA) ---
+   
     @Test(priority = 2)
-    public void test02_Login_LockedUser() throws InterruptedException {
+    public void TC02() throws InterruptedException {
         System.out.println("\n[TEST 2] Dang test locked user...");
         
-        // 1. Dang xuat
+       
         safeLogout();
         
-        // 2. Thuc hien test voi locked user
+     
         login(LOCKED_USERNAME, VALID_PASSWORD);
         
-        // 3. Kiem tra loi
+       
         WebElement errorMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[data-test='error']")));
         assertTrue(errorMsg.getText().contains("locked out"));
         
-        // 4. PHUC HOI TRANG THAI: Dang nhap lai bang user thuong
+      
         System.out.println("[TEST 2] Dang log in lai (standard_user) de chuan bi cho test tiep theo...");
         login(VALID_USERNAME, VALID_PASSWORD);
-        wait.until(ExpectedConditions.urlContains("inventory.html")); // Dam bao dang nhap thanh cong
+        wait.until(ExpectedConditions.urlContains("inventory.html")); 
         
         System.out.println("[OK] Test 2 hoan thanh (Da khoi phuc trang thai)");
     }
 
-    // --- TEST 3 (DA SUA) ---
+   
     @Test(priority = 3)
-    public void test03_Login_InvalidPassword() throws InterruptedException {
+    public void TC03() throws InterruptedException {
         System.out.println("\n[TEST 3] Dang test mat khau sai...");
         
-        // 1. Dang xuat
+       
         safeLogout();
         
-        // 2. Thuc hien test voi mat khau sai
+       
         login(VALID_USERNAME, "wrong_password");
         
-        // 3. Kiem tra loi
+       
         WebElement errorMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[data-test='error']")));
         assertTrue(errorMsg.getText().contains("do not match"));
         
-        // 4. PHUC HOI TRANG THAI: Dang nhap lai bang user thuong
+      
         System.out.println("[TEST 3] Dang log in lai (standard_user) de chuan bi cho test tiep theo...");
         login(VALID_USERNAME, VALID_PASSWORD);
         wait.until(ExpectedConditions.urlContains("inventory.html")); // Dam bao dang nhap thanh cong
@@ -193,7 +206,7 @@ public class Nhom08NGTest {
         System.out.println("[TC04] PASS");
     }
 
-    // ... (Cac test case tu 5 den 20 giu nguyen) ...
+   
     
     @Test(priority = 5)
     public void TC05() throws InterruptedException {

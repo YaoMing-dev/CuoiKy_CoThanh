@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * @author miyam
  */
-public class Nhom08 {
+public class Login {
     
     public static void main(String[] args) {
         System.out.println("Hello World!");

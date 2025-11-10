@@ -3,18 +3,18 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.mycompany.nhom08.Nhom08NGTest">
+      <class name="com.mycompany.nhom08.LoginNGTest">
         <methods>
-          <include name="TC20"/>
-          <include name="setupSuite"/>
-          <include name="tearDownMethod"/>
-          <include name="finish"/>
-          <include name="TC19"/>
-          <include name="setUpMethod"/>
-          <include name="TC18"/>
           <include name="TC17"/>
+          <include name="TC18"/>
+          <include name="TC19"/>
+          <include name="TC20"/>
+          <include name="finish"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpMethod"/>
+          <include name="setupSuite"/>
         </methods>
-      </class> <!-- com.mycompany.nhom08.Nhom08NGTest -->
+      </class> <!-- com.mycompany.nhom08.LoginNGTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
